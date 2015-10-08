@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- This file contains a list of production ESGF Identity Providers
+     that are trusted thorughout the federation. -->
+
+<idp_whitelist xmlns="http://www.esgf.org/whitelist">
+
+    <!-- America -->
+
+    <!-- Europe -->
+
+</idp_whitelist>
