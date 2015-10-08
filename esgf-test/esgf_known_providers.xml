@@ -42,11 +42,6 @@
 
  <!-- America -->
  <OP>
-  <!--
-	Identity Provider Organisation name to be displayed in ORP user interface combobox
-	The first entry is blank to indicate to the user that they can type in their
-	own if needed
-  -->
   <NAME>DOE Lawrence Livermore National Lab (LLNL)</NAME>
   <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
  </OP>
