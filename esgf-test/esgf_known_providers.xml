@@ -46,6 +46,13 @@
   <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
  </OP>
 
+ <OP>
+  <NAME>NASA Jet Propulsion Laboratory Development (JPL-Dev)</NAME>
+  <URL>https://esgf-dev.jpl.nasa.gov/esgf-idp/openid/</URL>
+ </OP>
+
+
+
  <!-- Asia -->
 
  <!-- Australia -->

@@ -37,27 +37,17 @@
   <NAME></NAME>
   <URL>https://</URL>
  </OP>
-
- <!-- Africa -->
-
- <!-- America -->
  <OP>
-  <NAME>NASA Jet Propulsion Laboratory (JPL)</NAME>
-  <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
- </OP>
- <OP>
-  <NAME>DOE Lawrence Livermore Laboratory (LLNL)</NAME>
+  <NAME>DOE Lawrence Livermore National Laboratory (LLNL)/NAME>
   <URL>https://pcmdi9.llnl.gov/esgf-idp/openid/</URL>
  </OP>
-
- <!-- Asia -->
-
- <!-- Australia -->
-
- <!-- Europe -->
  <OP>
   <NAME>Centre for Environmental Data Archival (CEDA)</NAME>
   <URL>https://ceda.ac.uk/openid/</URL>
+ </OP>
+ <OP>
+  <NAME>NASA Jet Propulsion Laboratory (JPL)</NAME>
+  <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
  </OP>
 
 </OPS>
