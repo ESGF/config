@@ -7,7 +7,7 @@
 
     <!-- America -->
     <value>https://esgf-dev.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
-
+    <value>https://pcmdi11.llnl.gov/esgf-idp/idp/openidServer.htm</value>
     <!-- Europe -->
 
 </idp_whitelist>
