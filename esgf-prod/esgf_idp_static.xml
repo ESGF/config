@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!-- This file contains a list of production ESGF Identity Providers
-     that are trusted thorughout the federation. -->
-
 <idp_whitelist xmlns="http://www.esgf.org/whitelist">
 
-    <!-- America -->
-    <value>https://esgf-node.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
-    <value>https://pcmdi9.llnl.gov/esgf-idp/idp/openidServer.htm</value>
-
-    <!-- Europe -->
     <value>https://ceda.ac.uk/openid/Provider/server</value>
     <value>https://ceda.ac.uk/OpenID/Provider/server</value>
+    <value>https://esgf-node.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
+    <value>https://pcmdi9.llnl.gov/esgf-idp/idp/openidServer.htm</value>
 
 </idp_whitelist>
