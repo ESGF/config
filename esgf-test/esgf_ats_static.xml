@@ -15,5 +15,11 @@
                attributeService="https://pcmdi9.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
                description="Users of CMIP5 data for commercial purposes"
                registrationService="https://pcmdi9.llnl.gov/esgf-idp/secure/registrationService.htm"/>
-               
+        
+        
+                <attribute type="LLNL"
+               attributeService="https://pcmdi11.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
+               registrationService="https://pcmdi11.llnl.gov/esgf-idp/secure/registrationService.htm"
+                description="desc"/>
+       
  </ats_whitelist>
