@@ -49,5 +49,10 @@
   <NAME>NASA Jet Propulsion Laboratory (JPL)</NAME>
   <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
  </OP>
+ <OP>
+  <NAME>IPSL</NAME>
+  <URL>https://esgf-node.ipsl.upmc.fr/esgf-idp/openid/</URL>
+ </OP>
+
 
 </OPS>

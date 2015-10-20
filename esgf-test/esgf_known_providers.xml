@@ -59,4 +59,10 @@
 
  <!-- Europe -->
 
+ <OP>
+   <NAME>IPSL (test-fed)</NAME>
+   <URL>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
+ </OP>
+
+
 </OPS>
