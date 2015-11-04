@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Example configuration files for ESGF/CoG nodes.
+     The actual list is read at startup from the location pointed by the PEER_NODES settings -->
+<sites>
+
+	<!-- Development CoG site -->
+	<site name="CoG-CU-DEV" domain="cog-cu-dev.colorado.edu" />
+
+</sites>
