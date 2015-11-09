@@ -50,9 +50,14 @@
   <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
  </OP>
  <OP>
-  <NAME>IPSL</NAME>
+  <NAME>Institut Pierre Simon Laplace (IPSL)</NAME>
   <URL>https://esgf-node.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
-
+ <!-- 
+ <OP>
+  <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
+  <URL>https://hydra.fsl.noaa.gov/esgf-idp/openid/</URL>
+ </OP>
+ -->
 
 </OPS>
