@@ -4,8 +4,9 @@
 
     <value>https://ceda.ac.uk/openid/Provider/server</value>
     <value>https://ceda.ac.uk/OpenID/Provider/server</value>
+    <value>https://esg-dn1.nsc.liu.se/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf-node.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
-    <value>https://pcmdi9.llnl.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf-node.ipsl.upmc.fr/esgf-idp/idp/openidServer.htm</value>
+    <value>https://pcmdi9.llnl.gov/esgf-idp/idp/openidServer.htm</value>
 
 </idp_whitelist>

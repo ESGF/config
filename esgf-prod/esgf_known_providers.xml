@@ -53,6 +53,10 @@
   <NAME>Institut Pierre Simon Laplace (IPSL)</NAME>
   <URL>https://esgf-node.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
+ <OP>
+  <NAME>National Supercomputer Center at Linkoping University (NSC-LIU)</NAME>
+  <URL>https://esg-dn1.nsc.liu.se/esgf-idp/openid/</URL>
+ </OP>
  <!-- 
  <OP>
   <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>

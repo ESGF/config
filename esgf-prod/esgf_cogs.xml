@@ -9,6 +9,13 @@
 
         <!-- NASA/JPL production server -->
         <site name="ESGF@NASA/JPL" domain="esgf-node.jpl.nasa.gov" />
+		
+        <!-- NSC/LIU production server -->
+        <site name="ESGF@NSC/LIU" domain="esg-dn1.nsc.liu.se" />
+		
+		<!-- IPSL production server -->
+        <site name="ESGF@IPSL" domain="esgf-node.ipsl.upmc.fr" />
+        
 
         <!-- DOE/LLNL production server -->
         <site name="ESGF@DOE/LLNL" domain="pcmdi9.llnl.gov" /> 
