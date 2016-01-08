@@ -18,6 +18,6 @@
         
 
         <!-- DOE/LLNL production server -->
-        <site name="ESGF@DOE/LLNL" domain="pcmdi9.llnl.gov" /> 
+        <site name="ESGF@DOE/LLNL" domain="pcmdi.llnl.gov" /> 
 
 </sites>
