@@ -21,5 +21,8 @@
               attributeService="https://esgf-node.jpl.nasa.gov/esgf-idp/saml/soap/secure/attributeService.htm"
               description="NASA Observational Data"
               registrationService="https://esgf-node.jpl.nasa.gov/esgf-idp/secure/registrationService.htm"/>
+
+    <attribute type="ACME" 
+                attributeService="https://esg.ccs.ornl.gov/esgf-idp/saml/soap/secure/attributeService.htm" description="ACME user group" registrationService="https://esg.ccs.ornl.gov/esgf-idp/secure/registrationService.htm" />
  
  </ats_whitelist>
