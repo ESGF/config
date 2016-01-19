@@ -57,6 +57,10 @@
   <NAME>National Supercomputer Center at Linkoping University (NSC-LIU)</NAME>
   <URL>https://esg-dn1.nsc.liu.se/esgf-idp/openid/</URL>
  </OP>
+ <OP>
+  <NAME>German Climate Computing Centre (DKRZ)</NAME>
+  <URL>https://esgf-data.dkrz.de/esgf-idp/openid/</URL>
+ </OP>
  <!-- 
  <OP>
   <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
