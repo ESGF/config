@@ -13,7 +13,7 @@
         <!-- NSC/LIU production server -->
         <site name="ESGF@NSC/LIU" domain="esg-dn1.nsc.liu.se" />
 		
-		<!-- IPSL production server -->
+	<!-- IPSL production server -->
         <site name="ESGF@IPSL" domain="esgf-node.ipsl.upmc.fr" />
         
         <!-- DOE/LLNL production server -->
