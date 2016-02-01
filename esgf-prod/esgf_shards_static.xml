@@ -18,10 +18,9 @@
     <!-- Australia -->
 
     <!-- Europe -->
-    <value>esg-dn1.nsc.liu.se/solr</value>
-    <value>esgf-node.ipsl.upmc.fr/solr</value>
     <value>esgf-data.dkrz.de/solr</value>
-
-    
+    <value>esgf-node.ipsl.upmc.fr/solr</value>
+    <value>esg-dn1.nsc.liu.se/solr</value>
+    <value>esgf-index1.ceda.ac.uk/solr</value>
      
 </shards>
