@@ -17,6 +17,9 @@
     <!-- NOAA/ESRL production server -->
     <site name="ESGF@NOAA/ESRL" domain="cog-esgf.esrl.noaa.gov" />		
 
+    <!-- NOAA/GFDL production server -->
+    <site name="ESGF@NOAA/GFDL" domain="esgdata.gfdl.noaa.gov" />		
+
   <!-- Asia -->
 
   <!-- Australia -->
