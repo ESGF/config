@@ -13,6 +13,8 @@
     <!-- America -->
     <value>esgf-node.jpl.nasa.gov/solr</value>
     <value>pcmdi.llnl.gov/solr</value>
+    <value>esgdata.gfdl.noaa.gov/solr</value>
+
     <!-- Asia -->
 
     <!-- Australia -->
