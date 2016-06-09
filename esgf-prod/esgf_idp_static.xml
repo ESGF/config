@@ -13,5 +13,6 @@
     <value>https://hydra.fsl.noaa.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgdata.gfdl.noaa.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf.nci.org.au/esgf-idp/idp/openidServer.htm</value>
+    <value>https://esgf.nccs.nasa.gov/esgf-idp/idp/openidServer.htm</value>
     
 </idp_whitelist>
