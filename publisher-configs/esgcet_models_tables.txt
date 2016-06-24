@@ -1,4 +1,15 @@
+# Sample model initialization file. Each line has the form:
+#
 # project | model_id | URL | description
+#
+# To configure the publisher database with this information:
+#
+# - In esg.ini, in the [initialize] section, uncomment the line:
+#     initial_models_table = %(home)s/.esgcet/esgcet_models_table.txt
+#
+# - Run:
+#     % esginitialize -c -i /esg/config/esgcet/esg.ini
+
 cmip5 | access | | ACCESS, Centre for Australian Weather and Climate Research (CAWCR)
 cmip5 | ACCESS | | ACCESS, Centre for Australian Weather and Climate Research (CAWCR)
 cmip5 | ACCESS1-0 | | ACCESS1-0
@@ -152,6 +163,7 @@ cmip5 | NorESM1-ME | | NorESM1-ME
 cmip5 | pcmdi-test | | PCMDI
 cmip5 | SP-CCSM4 | | SP-CCSM4
 cordex | IPSL-INERIS-WRF331F | | Institut Pierre-Simon Laplace
+cordex-adjust | IPSL-INERIS-WRF331F | | Institut Pierre-Simon Laplace
 euclipse | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 euclipse | IPSL-CM5B-LR | | IPSL-CM5B-LR, Institut Pierre-Simon Laplace
 geomip | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
