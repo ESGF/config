@@ -14,6 +14,9 @@
     <!-- NASA/JPL production server -->
     <site name="ESGF@NASA/JPL" domain="esgf-node.jpl.nasa.gov" />
 
+    <!-- NASA/NCCS production server -->
+    <site name="ESGF@NASA/NCCS" domain="esgf.nccs.nasa.gov" />
+
     <!-- NOAA/ESRL production server -->
     <site name="ESGF@NOAA/ESRL" domain="cog-esgf.esrl.noaa.gov" />		
 
