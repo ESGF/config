@@ -73,11 +73,9 @@
   <NAME>NOAA Geophysical Fluid Dynamics Laboratory (GFDL)</NAME>
   <URL>https://esgdata.gfdl.noaa.gov/esgf-idp/openid/</URL>
  </OP>
- <!-- 
  <OP>
   <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
-  <URL>https://hydra.fsl.noaa.gov/esgf-idp/openid/</URL>
+  <URL>https://esgf.esrl.noaa.gov/esgf-idp/openid/</URL>
  </OP>
- -->
 
 </OPS>
