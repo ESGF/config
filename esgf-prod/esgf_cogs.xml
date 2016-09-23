@@ -18,7 +18,7 @@
     <site name="ESGF@NASA/NCCS" domain="esgf.nccs.nasa.gov" />
 
     <!-- NOAA/ESRL production server -->
-    <site name="ESGF@NOAA/ESRL" domain="cog-esgf.esrl.noaa.gov" />		
+    <site name="ESGF@NOAA/ESRL" domain="esgf.esrl.noaa.gov" />
 
     <!-- NOAA/GFDL production server -->
     <site name="ESGF@NOAA/GFDL" domain="esgdata.gfdl.noaa.gov" />		
