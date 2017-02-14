@@ -10,5 +10,6 @@
     <value>https://pcmdi11.llnl.gov/esgf-idp/idp/openidServer.htm</value>
     <!-- Europe -->
     <value>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/idp/openidServer.htm</value>
+    <value>https://esgf-fedtest.dkrz.de/esgf-idp/idp/openidServer.htm</value>
 
 </idp_whitelist>

@@ -18,5 +18,6 @@
 
     <!-- Europe -->
     <value>vesgint-idx.ipsl.upmc.fr/solr</value>
+    <value>esgf-fedtest.dkrz.de/solr</value>
 
 </shards>
