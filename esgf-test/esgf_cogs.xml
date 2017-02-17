@@ -7,4 +7,7 @@
 	<site name="CoG-CU-DEV" domain="cog-cu-dev.colorado.edu" />
 	<site name="ESGF-LLNL-DEV" domain="pcmdi11.llnl.gov" />
 
+	<!-- NCI test server -->
+    	<site name="ESGFTEST@NCI" domain="esgftest.nci.org.au" /> 
+	
 </sites>
