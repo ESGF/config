@@ -69,5 +69,9 @@
    <URL>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
 
+ <OP>
+   <NAME>DKRZ (test-fed)</NAME>
+   <URL>https://esgf-fedtest.dkrz.de/esgf-idp/openid/</URL>
+ </OP>
 
 </OPS>
