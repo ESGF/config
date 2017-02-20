@@ -57,6 +57,11 @@
 
  <!-- Australia -->
 
+ <OP>
+  <NAME>National Computational Infrastructure (NCI)</NAME>
+  <URL>https://esgftest.nci.org.au/esgf-idp/openid/</URL>
+ </OP>
+	
  <!-- Europe -->
 
  <OP>
