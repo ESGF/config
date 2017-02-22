@@ -13,6 +13,8 @@
 
     <value>https://esgf-fedtest.dkrz.de/esgf-idp/idp/openidServer.htm</value>
 
+    <!-- CEDA entry as per comments in esgf_known_providers.xml -->
+    <value>https://ceda.ac.uk/OpenID/Provider/server</value>
 
      
     <!-- Australia -->
