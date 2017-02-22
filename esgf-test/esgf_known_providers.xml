@@ -74,4 +74,16 @@
    <URL>https://esgf-fedtest.dkrz.de/esgf-idp/openid/</URL>
  </OP>
 
+ <OP>
+   <!-- 
+        CEDA will not run the ESGF IDP operationally, so there is no link 
+        here to a fedcheck equivalent.  Access to any IDP running on the 
+        CEDA fedcheck site may be blocked except for use with local node
+        administration.
+   -->
+   <NAME>CEDA (operational non-ESGF IDP)</NAME>
+   <URL>https://ceda.ac.uk/openid/</URL>
+ </OP>
+
+
 </OPS>
