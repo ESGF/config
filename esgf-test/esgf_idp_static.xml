@@ -11,4 +11,14 @@
     <!-- Europe -->
     <value>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/idp/openidServer.htm</value>
 
+    <value>https://esgf-fedtest.dkrz.de/esgf-idp/idp/openidServer.htm</value>
+
+    <!-- CEDA entry as per comments in esgf_known_providers.xml -->
+    <value>https://ceda.ac.uk/OpenID/Provider/server</value>
+
+     
+    <!-- Australia -->
+    <value>https://esgftest.nci.org.au/esgf-idp/idp/openidServer.htm</value> 
+     
+
 </idp_whitelist>
