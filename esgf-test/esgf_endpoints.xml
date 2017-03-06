@@ -5,4 +5,5 @@
   <endpoint name="jplesgnode#archive" gridftp="esg-datanode.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
   <endpoint name="jplesgnode#archive" gridftp="esg-vm.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
   -->
+  <endpoint name="dd1ee76f-6d04-11e5-ba46-22000b92c6ec" gridftp="pcmdi7.llnl.gov:2811" path_out="/cmip5_css02_data" />
 </endpoints>
