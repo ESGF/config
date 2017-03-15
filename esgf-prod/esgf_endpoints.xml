@@ -3,4 +3,6 @@
 <endpoints xmlns="http://www.esgf.org/whitelist">
   <endpoint name="jplnasagov#public" gridftp="esgf-node.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
   <endpoint name="jplnasagov#shared" gridftp="esgf-data.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
+  <endpoint name="dd1ee76f-6d04-11e5-ba46-22000b92c6ec" gridftp="aims3.llnl.gov:2811" path_out="/cmip5_css01_data" />
+  <endpoint name="dd1ee76f-6d04-11e5-ba46-22000b92c6ec" gridftp="aims3.llnl.gov:2811" path_out="/cmip5_css02_data" />
 </endpoints>
