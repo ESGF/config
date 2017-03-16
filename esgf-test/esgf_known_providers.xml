@@ -28,6 +28,7 @@
 	to confirm their username along with their password.
 -->
 <OPS>
+
  <OP>
   <!--
 	Identity Provider Organisation name to be displayed in ORP user interface combobox
@@ -42,44 +43,40 @@
 
  <!-- America -->
  <OP>
-  <NAME>DOE Lawrence Livermore National Lab (LLNL)</NAME>
+  <NAME>DOE Lawrence Livermore National Lab (LLNL - TEST)</NAME>
   <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
  </OP>
-
-
-
 
  <!-- Asia -->
 
  <!-- Australia -->
 
  <OP>
-  <NAME>National Computational Infrastructure (NCI)</NAME>
+  <NAME>National Computational Infrastructure (NCI - TEST)</NAME>
   <URL>https://esgftest.nci.org.au/esgf-idp/openid/</URL>
  </OP>
 	
  <!-- Europe -->
 
  <OP>
-   <NAME>IPSL (test-fed)</NAME>
+   <NAME>Institut Pierre Simon Laplace (IPSL - TEST)</NAME>
    <URL>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
 
  <OP>
-   <NAME>DKRZ (test-fed)</NAME>
+   <NAME>German Climate Computing Centre (DKRZ - TEST)</NAME>
    <URL>https://esgf-fedtest.dkrz.de/esgf-idp/openid/</URL>
  </OP>
 
  <OP>
    <!-- 
-        CEDA will not run the ESGF IDP operationally, so there is no link 
-        here to a fedcheck equivalent.  Access to any IDP running on the 
-        CEDA fedcheck site may be blocked except for use with local node
-        administration.
+    CEDA will not run the ESGF IDP operationally, so there is no link
+    here to a fedcheck equivalent.  Access to any IDP running on the
+    CEDA fedcheck site may be blocked except for use with local node
+    administration.
    -->
    <NAME>CEDA (operational non-ESGF IDP)</NAME>
    <URL>https://ceda.ac.uk/openid/</URL>
  </OP>
-
 
 </OPS>
