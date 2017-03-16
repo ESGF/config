@@ -6,5 +6,10 @@
 	<!-- Development CoG site -->
 	<site name="CoG-CU-DEV" domain="cog-cu-dev.colorado.edu" />
 	<site name="ESGF-LLNL-DEV" domain="pcmdi11.llnl.gov" />
+	<site name="ESGF-DKRZ-DEV" domain="esgf-fedtest.dkrz.de" />
+	<site name="ESGF-CEDA-DEV" domain="esgf-index-fedcheck.ceda.ac.uk" />
 
+	<!-- NCI test server -->
+    	<site name="ESGFTEST@NCI" domain="esgftest.nci.org.au" /> 
+	
 </sites>

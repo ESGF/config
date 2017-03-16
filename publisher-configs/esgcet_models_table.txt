@@ -210,7 +210,6 @@ lucid | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 pmip3 | bcc-csm1-1 | | BCC, Beijing Climate Center, China Meteorological Administration
 pmip3 | CCSM4 | | NCAR, National Center for Atmospheric Research, USA
 pmip3 | CNRM-CM5 | | CNRM-CERFACS, Centre National de Recherches Meteorologiques / Centre Europeen de Recherche et Formation Avancees en Calcul Scientifique, France
-pmip3 | COSMOS-aso | | AWI, Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, Germany
 pmip3 | COSMOS-ASO | | FUB, Freie Universitaet Berlin, Institute for Meteorology, Germany
 pmip3 | CSIRO-Mk3-6-0 | | CSIRO-QCCCE, Commonwealth Scientific and Industrial Research Organization/Queensland Climate Change Centre of Excellence, Australia
 pmip3 | CSIRO-Mk3L-1-2 | | UNSW, University of New South Wales, Australia
@@ -220,15 +219,13 @@ pmip3 | FGOALS-gl | | LASG, Institute of Atmospheric Physics, Chinese Academy of
 pmip3 | FGOALS-s2 | | LASG-IAP, Institute of Atmospheric Physics, Chinese Academy of Sciences
 pmip3 | GFDL-CM3 | | NOAA-GFDL, Geophysical Fluid Dynamics Laboratory, USA
 pmip3 | GISS-E2-R | | NASA-GISS, NASA Goddard Institute for Space Studies, USA
+pmip3 | HadCM3 | | UOED, UBRIS LEEDS EDINBURGH Hadley Centre, UK
 pmip3 | HadGEM2-ES | | MOHC, Met Office Hadley Centre, UK
 pmip3 | IPSL-CM5A-LR | | IPSL, Institut Pierre-Simon Laplace, France
 pmip3 | KCM1-2-2 | | CAU-GEOMAR, Christian-Albrechts University, Germany
-pmip3 | LOVECLIM1-2 | | LOVECLIM
 pmip3 | MIROC-ESM | | MIROC, Atmosphere and Ocean Research Institute (The University of Tokyo), National Institute for Environmental Studies, and Japan Agency for Marine-Earth Science and Technology, Japan
 pmip3 | MPI-ESM-P | | MPI-M, Max Planck Institute for Meteorology, Germany
 pmip3 | MRI-CGCM3 | | MRI, Meteorological Research Institute, Japan
-pmip3 | NorESM1-L | | BCCR, Bjerknes Centre for Climate Research, Norway
-pmip3 | OSUVic-0-3 | | OSUVic, Oregon State University, USA / University of Victoria
 tamip | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 test | IPSL-CM5A-LR |  | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 test | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace

@@ -44,4 +44,7 @@
     <!-- CEDA production server -->
     <site name="ESGF@CEDA" domain="esgf-index1.ceda.ac.uk" /> 
 
+    <!-- PIK production server -->
+    <site name="ESGF@PIK" domain="esg.pik-potsdam.de" /> 
+
 </sites>
