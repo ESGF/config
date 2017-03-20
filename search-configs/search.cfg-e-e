@@ -1,0 +1,47 @@
+[GLOBAL]
+url = http://<INDEX_NODE_HOST_NAME>/esg-search/search/
+modelMetadataFlag = False
+replicaSearchFlag = True
+latestSearchFlag = True
+localSearchFlag = True
+
+[0=default]
+0 = project|Project
+1 = product|Product
+2 = institute|Institute
+3 = model|Model
+4 = experiment|Experiment
+5 = experiment_family|Experiment Family
+6 = time_frequency|Time Frequency
+7 = realm|Realm
+8 = cmor_table|CMIP Table
+9 = ensemble|Ensemble
+10 = variable|Variable
+11 = variable_long_name|Variable Long Name
+12 = cf_standard_name|CF Standard Name
+13 = driving_model|Driving Model
+14 = data_node|Datanode
+
+[1 = CORDEX]
+0 = domain|Domain
+1 = rcm_name|RCM Model
+2 = rcm_version|Downscaling realisation
+
+[2=ISIMIP-FT]
+0 = impact_model|Impact Model
+1 = sector|Sector
+2 = social_forcing|Social Forcing
+3 = co2_forcing|CO2 Forcing
+4 = irrigation_forcing|Irrigation Forcing
+5 = crop|Crop
+6 = pft|Plant Functional Type
+7 = vegetation|Vegetation Type
+
+[3=obs4MIPs]
+0 = source_id|Instrument
+
+[4=SPECS]
+0 = start_date|Start Date
+
+[5=CORDEX-Adjust]
+0 = bias_adjustment|Bias Adjustment

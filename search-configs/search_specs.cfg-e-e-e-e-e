@@ -1,0 +1,24 @@
+[GLOBAL]
+url = http://<INDEX_NODE_HOST_NAME>/esg-search/search/
+constraints = project=SPECS
+modelMetadataFlag = False
+replicaSearchFlag = True
+latestSearchFlag = True
+localSearchFlag = True
+
+[0=default]
+0 = project|Project
+1 = product|Product
+2 = institute|Institute
+3 = model|Model
+4 = experiment|Experiment
+5 = experiment_family|Experiment Family
+6 = start_date|Start Date
+7 = time_frequency|Time Frequency
+8 = realm|Realm
+9 = cmor_table|CMIP Table
+10 = variable|Variable
+11 = variable_long_name|Variable Long Name
+12 = cf_standard_name|CF Standard Name
+13 = ensemble|Ensemble
+14 = data_node|Datanode

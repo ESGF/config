@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<las_servers xmlns="http://www.esgf.org/registry">
+    <las_server name="ESGF-JPL-NODE" url="http://esgf-node.jpl.nasa.gov/las" ip="128.149.121.151"/>
+    <las_server name="ESGF-JPL-DATA" url="http://esgf-data.jpl.nasa.gov/las" ip="128.149.121.152"/>
+</las_servers>
