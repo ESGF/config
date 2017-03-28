@@ -7,7 +7,7 @@
     <!-- esgf-node Attribute and Registration services: it is included here to allow registration for "esgf-test" nodes,
 	     otherwise it should be contained in file esgf_ats.xml for nodes in the "esgf-prod" group -->
     <attribute type="LLNL"
-               attributeService="https://esgf-node.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
-               registrationService="https://esgf-node.llnl.gov/esgf-idp/secure/registrationService.htm"
+               attributeService="https://pcmdi11.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
+               registrationService="https://pcmdi11.llnl.gov/esgf-idp/secure/registrationService.htm"
                description="desc"/>
  </ats_whitelist>

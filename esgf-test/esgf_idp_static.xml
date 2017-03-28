@@ -5,7 +5,7 @@
     <!-- Africa -->
 
     <!-- America -->
-    <value>https://esgf-node.llnl.gov/esgf-idp/idp/openidServer.htm</value>
+    <value>https://pcmdi11.llnl.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf-dev.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
 
     <!-- Asia -->

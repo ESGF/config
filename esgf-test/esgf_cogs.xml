@@ -9,7 +9,7 @@
     <!-- America -->
 
         <!-- DOE/LLNL production server -->
-        <site name="ESGF-TEST@DOE/LLNL" domain="esgf-node.llnl.gov" />
+        <site name="ESGF-TEST@DOE/LLNL" domain="pcmdi11.llnl.gov" />
 
     <!-- Asia -->
 

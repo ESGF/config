@@ -44,7 +44,7 @@
  <!-- America -->
  <OP>
   <NAME>DOE Lawrence Livermore National Lab (LLNL - TEST)</NAME>
-  <URL>https://esgf-node.llnl.gov/esgf-idp/openid</URL>
+  <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
  </OP>
 
  <!-- Asia -->
