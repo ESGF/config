@@ -28,26 +28,56 @@
 	to confirm their username along with their password.
 -->
 <OPS>
+
  <OP>
   <!--
-	Identity Provider Organisation name to be displayed in ORP user interface combobox
-	The first entry is blank to indicate to the user that they can type in their
-	own if needed
+    Identity Provider Organisation name to be displayed in ORP user interface combobox
+    The first entry is blank to indicate to the user that they can type in their
+    own if needed
   -->
   <NAME></NAME>
   <URL>https://</URL>
  </OP>
+
+  <!-- Africa -->
+
+  <!-- America -->
+
  <OP>
   <NAME>DOE Lawrence Livermore National Laboratory (LLNL)</NAME>
   <URL>https://esgf-node.llnl.gov/esgf-idp/openid/</URL>
  </OP>
  <OP>
-  <NAME>Centre for Environmental Data Analysis (CEDA)</NAME>
-  <URL>https://ceda.ac.uk/openid/</URL>
- </OP>
- <OP>
   <NAME>NASA Jet Propulsion Laboratory (JPL)</NAME>
   <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
+ </OP>
+ <OP>
+  <NAME>NASA Center for Climate Simulation (NCCS)</NAME>
+  <URL>https://esgf.nccs.nasa.gov/esgf-idp/openid/</URL>
+ </OP>
+ <OP>
+  <NAME>NOAA Geophysical Fluid Dynamics Laboratory (GFDL)</NAME>
+  <URL>https://esgdata.gfdl.noaa.gov/esgf-idp/openid/</URL>
+ </OP>
+ <OP>
+  <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
+  <URL>https://esgf.esrl.noaa.gov/esgf-idp/openid/</URL>
+ </OP>
+
+ <!-- Asia -->
+
+ <!-- Australia -->
+
+ <OP>
+  <NAME>National Computational Infrastructure (NCI)</NAME>
+  <URL>https://esgf.nci.org.au/esgf-idp/openid/</URL>
+ </OP>
+
+ <!-- Europe -->
+
+ <OP>
+  <NAME>Centre for Environmental Data Analysis (CEDA)</NAME>
+  <URL>https://ceda.ac.uk/openid/</URL>
  </OP>
  <OP>
   <NAME>Institut Pierre Simon Laplace (IPSL)</NAME>
@@ -60,22 +90,6 @@
  <OP>
   <NAME>German Climate Computing Centre (DKRZ)</NAME>
   <URL>https://esgf-data.dkrz.de/esgf-idp/openid/</URL>
- </OP>
- <OP>
-  <NAME>NASA Center for Climate Simulation (NCCS)</NAME>
-  <URL>https://esgf.nccs.nasa.gov/esgf-idp/openid/</URL>
- </OP>
- <OP>
-  <NAME>National Computational Infrastructure (NCI)</NAME>
-  <URL>https://esgf.nci.org.au/esgf-idp/openid/</URL>
- </OP>
- <OP>
-  <NAME>NOAA Geophysical Fluid Dynamics Laboratory (GFDL)</NAME>
-  <URL>https://esgdata.gfdl.noaa.gov/esgf-idp/openid/</URL>
- </OP>
- <OP>
-  <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
-  <URL>https://esgf.esrl.noaa.gov/esgf-idp/openid/</URL>
  </OP>
 
 </OPS>
