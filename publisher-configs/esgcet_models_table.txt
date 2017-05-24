@@ -173,7 +173,7 @@ cmip5 | NorESM1-M | | NorESM1-M
 cmip5 | NorESM1-M | | NorESM1-M, Norwegian Climate Centre (NorClim)
 cmip5 | NorESM1-ME | | NorESM1-ME
 cmip5 | NorESM1-ME | | NorESM1-ME, Norwegian Climate Centre (NorClim)
-cmip5 | pcmdi-test | | PCMDI
+cmip5 | esgf-node-test | | PCMDI
 cmip5 | SP-CCSM4 | | SP-CCSM4
 cordex | IPSL-INERIS-WRF331F | | Institut Pierre-Simon Laplace
 cordex | WRF331F | | Institut Pierre-Simon Laplace
@@ -182,7 +182,7 @@ euclipse | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 euclipse | IPSL-CM5B-LR | | IPSL-CM5B-LR, Institut Pierre-Simon Laplace
 geomip | IPSL-CM5A-LR | | IPSL-CM5A-LR, Institut Pierre-Simon Laplace
 ipcc4 |  bcc_cm1 | http://bcc.cma.gov.cn | Beijing Climate Center, China, BCC-CM1 Model
-ipcc4 |  bccr_bcm2_0 | http://www-pcmdi.llnl.gov/ipcc/model_documentation/BCCR_BCM2.0.htm | Bjerknes Centre for Climate Research, Norway, BCM2.0 Model
+ipcc4 |  bccr_bcm2_0 | http://www-esgf-node.llnl.gov/ipcc/model_documentation/BCCR_BCM2.0.htm | Bjerknes Centre for Climate Research, Norway, BCM2.0 Model
 ipcc4 |  cccma_cgcm3_1 | http://www.cccma.bc.ec.gc.ca/eng_index.shtml | Canadian Centre for Climate Modelling and Analysis, CGCM3.1 Model, T47
 ipcc4 |  cccma_cgcm3_1_t63 | http://www.cccma.bc.ec.gc.ca/eng_index.shtml | Canadian Centre for Climate Modelling and Analysis, CGCM3.1 Model, T63
 ipcc4 |  cnrm_cm3 | http://www.cnrm.meteo.fr/scenario2004/indexenglish.html | Meteo-France, Centre National de Recherches Meteorologiques, CM3 Model
@@ -199,7 +199,7 @@ ipcc4 |  inmcm3_0 | http://www.inm.ras.ru/en/index.htm | Institute for Numerical
 ipcc4 |  ipsl_cm4 | http://mc2.ipsl.jussieu.fr/simules.html | IPSL/LMD/LSCE, France, CM4 V1 Model
 ipcc4 |  miroc3_2_hires | http://www.ccsr.u-tokyo.ac.jp/kyosei/hasumi/MIROC/tech-repo.pdf| CCSR/NIES/FRCGC, MIROC Model V3.2, high resolution
 ipcc4 |  miroc3_2_medres | http://www.ccsr.u-tokyo.ac.jp/kyosei/hasumi/MIROC/tech-repo.pdf| CCSR/NIES/FRCGC, MIROC Model V3.2, medium resolution
-ipcc4 |  miub_echo_g | http://www-pcmdi.llnl.gov/projects/modeldoc/cmip/echo-g_tbls.html | Meteorological Institute of the University of Bonn, ECHO-G Model
+ipcc4 |  miub_echo_g | http://www-esgf-node.llnl.gov/projects/modeldoc/cmip/echo-g_tbls.html | Meteorological Institute of the University of Bonn, ECHO-G Model
 ipcc4 |  mpi_echam5 | http://www.mpimet.mpg.de/en/extra/models/echam/echam5.php | Max Planck Institute for Meteorology, Germany, ECHAM5 / MPI OM
 ipcc4 |  mri_cgcm2_3_2a | http://www.mri-jma.go.jp/Welcome.html| Meteorological Research Institute, Japan, CGCM2.3.2a
 ipcc4 |  ncar_ccsm3_0| http://www.ccsm.ucar.edu| NCAR Community Climate System Model, CCSM 3.0
@@ -247,3 +247,4 @@ test | test | http://www-pcmdi.llnl.gov | Test
   cmip6 | NorESM2-MM |   | NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349),MET-Norway (Norwegian Meteorological Institute, Oslo 0313),NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006),NILU (Norwegian Institute for Air Research, Kjeller 2027),UiB (University of Bergen, Bergen 5007),UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway, NorESM2-MM (medium atmosphere-medium ocean resolution, GHG concentration driven)
   cmip6 | NorESM2-LME |   | NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349),MET-Norway (Norwegian Meteorological Institute, Oslo 0313),NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006),NILU (Norwegian Institute for Air Research, Kjeller 2027),UiB (University of Bergen, Bergen 5007),UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway, NorESM2-LME (low atmosphere-medium ocean resolution, GHG emission driven)
   cmip6 | EC-Earth-3-LR |   | KNMI, The Netherlands; SMHI, Sweden; DMI, Denmark; AEMET, Spain; Met Eireann, Ireland; CNR-ISAC, Italy; Instituto de Meteorologia, Portugal; FMI, Finland; BSC, Spain; Centro de Geofisica, University of Lisbon, Portugal; ENEA, Italy; Geomar, Germany; Geophysical Institute, University of Bergen, Norway; ICHEC, Ireland; ICTP, Italy; IMAU, The Netherlands; IRV, Sweden;  Lund University, Sweden; Meteorologiska Institutionen, Stockholms University, Sweden; Niels Bohr Institute, University of Copenhagen, Denmark; NTNU, Norway; SARA, The Netherlands; Unite ASTR, Belgium; Universiteit Utrecht, The Netherlands; Universiteit Wageningen, The Netherlands; University College Dublin, Ireland; Vrije Universiteit Amsterdam, the Netherlands; University of Helsinki, Finland; KIT, Karlsruhe, Germany; USC, University of Santiago de Compostela, Spain; Uppsala Universitet, Sweden; NLeSC, Netherlands eScience Center, The Netherlands, EC-Earth v3.2.x at low resolution
+
