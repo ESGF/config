@@ -247,4 +247,16 @@ test | test | http://www-pcmdi.llnl.gov | Test
   cmip6 | NorESM2-MM |   | NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349),MET-Norway (Norwegian Meteorological Institute, Oslo 0313),NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006),NILU (Norwegian Institute for Air Research, Kjeller 2027),UiB (University of Bergen, Bergen 5007),UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway, NorESM2-MM (medium atmosphere-medium ocean resolution, GHG concentration driven)
   cmip6 | NorESM2-LME |   | NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349),MET-Norway (Norwegian Meteorological Institute, Oslo 0313),NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006),NILU (Norwegian Institute for Air Research, Kjeller 2027),UiB (University of Bergen, Bergen 5007),UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway, NorESM2-LME (low atmosphere-medium ocean resolution, GHG emission driven)
   cmip6 | EC-Earth-3-LR |   | KNMI, The Netherlands; SMHI, Sweden; DMI, Denmark; AEMET, Spain; Met Eireann, Ireland; CNR-ISAC, Italy; Instituto de Meteorologia, Portugal; FMI, Finland; BSC, Spain; Centro de Geofisica, University of Lisbon, Portugal; ENEA, Italy; Geomar, Germany; Geophysical Institute, University of Bergen, Norway; ICHEC, Ireland; ICTP, Italy; IMAU, The Netherlands; IRV, Sweden;  Lund University, Sweden; Meteorologiska Institutionen, Stockholms University, Sweden; Niels Bohr Institute, University of Copenhagen, Denmark; NTNU, Norway; SARA, The Netherlands; Unite ASTR, Belgium; Universiteit Utrecht, The Netherlands; Universiteit Wageningen, The Netherlands; University College Dublin, Ireland; Vrije Universiteit Amsterdam, the Netherlands; University of Helsinki, Finland; KIT, Karlsruhe, Germany; USC, University of Santiago de Compostela, Spain; Uppsala Universitet, Sweden; NLeSC, Netherlands eScience Center, The Netherlands, EC-Earth v3.2.x at low resolution
+# obs4mips
+obs4mips | Obs-AVISO | http://jpl.nasa.gov | JPL
+obs4mips | Obs-MLS | http://jpl.nasa.gov | JPL
+obs4mips | Obs-AIRS | | NASA Atmospheric Infrared Sounder
+obs4mips | Obs-TES | http://jpl.nasa.gov | JPL
+obs4mips | Obs-MODIS | http://jpl.nasa.gov | JPL
+obs4mips | Obs-QuikSCAT | http://jpl.nasa.gov | JPL
+obs4mips | Obs-MERRA | | NASA GEOS-5 Reanalysis
+obs4mips | Obs-AMSRE | http://jpl.nasa.gov | JPL
+obs4mips | Obs-SSMI | http://www.remss.com/ | RSS
+obs4mips | Obs-Microwave-Radiometer-Imager | http://www.remss.com/ | RSS
+obs4mips | Obs-RO | http://jpl.nasa.gov  | JPL
 
