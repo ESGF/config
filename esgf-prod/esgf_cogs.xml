@@ -8,8 +8,10 @@
 
     <!-- America -->
 
-        <!-- DOE/LLNL production server -->
-        <site name="ESGF@DOE/LLNL" domain="pcmdi.llnl.gov" />
+
+    <!-- DOE/LLNL production server -->
+    <site name="ESGF@DOE/LLNL" domain="esgf-node.llnl.gov" /> 
+
 
         <!-- NASA/JPL production server -->
         <site name="ESGF@NASA/JPL" domain="esgf-node.jpl.nasa.gov" />

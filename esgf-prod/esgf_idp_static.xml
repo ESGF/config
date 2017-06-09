@@ -2,13 +2,10 @@
 
 <idp_whitelist xmlns="http://www.esgf.org/whitelist">
 
-    <!-- Africa -->
 
-    <!-- America -->
-    <value>https://pcmdi.llnl.gov/esgf-idp/idp/openidServer.htm</value>
-    <value>https://esgf-node.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgdata.gfdl.noaa.gov/esgf-idp/idp/openidServer.htm</value>
-    <value>https://esg.ccs.ornl.gov/esgf-idp/idp/openidServer.htm</value>
+    <value>https://esgf-node.jpl.nasa.gov/esgf-idp/idp/openidServer.htm</value>
+    <value>https://esgf-node.llnl.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://hydra.fsl.noaa.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf.esrl.noaa.gov/esgf-idp/idp/openidServer.htm</value>
     <value>https://esgf.nccs.nasa.gov/esgf-idp/idp/openidServer.htm</value>
