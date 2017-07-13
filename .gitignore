@@ -1,0 +1,14 @@
+###################
+# Python compiled #
+###################
+*.pyc
+*.pyo
+build
+dist
+*.egg-info
+
+############
+# PyCharme #
+############
+.idea
+.DS_Store
