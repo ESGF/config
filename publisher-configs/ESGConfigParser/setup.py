@@ -7,7 +7,7 @@ from ESGConfigParser.constants import VERSION
 
 setup(name='ESGConfigParser',
       version=VERSION,
-      description='ESGF configuration parser for INI files',
+      description='ESGF configuration ESGConfigParser for INI files',
       author='Levavasseur Guillaume',
       author_email='glipsl@ipsl.fr',
       url='https://github.com/IS-ENES-Data/esgf-config-esgini',

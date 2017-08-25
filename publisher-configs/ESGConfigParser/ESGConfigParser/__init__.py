@@ -22,13 +22,56 @@ class SectionParser(ConfigParser):
 
     """
 
-    def __init__(self, directory, section):
+    def __init__(self, section, directory=None):
         ConfigParser.__init__(self)
         self.reset()
         ConfigException.SECTION = section
-        self.files = list()
         self.section = section
-        self.parse(directory)
+        if directory:
+            self.files = list()
+            self.parse(directory)
+        else:
+            self.add_section(section)
+
+    def set(self, option, value=None, newline=False, section=None):
+        """
+        Overwrite the original method to set an option value for the given section.
+        The value can be written on a new line.
+
+        """
+        if self.section == DEFAULTSECT:
+            sectdict = self._defaults
+        else:
+            try:
+                sectdict = self._sections[self.section]
+            except KeyError:
+                raise NoConfigSection()
+        if newline:
+            value = '\n{}'.format(value)
+        sectdict[self.optionxform(option)] = value
+
+    def write(self, fp):
+        """
+        Overwrite the original method to write options value for the given section.
+        An ending newline is added in any case.
+
+        """
+        if self._defaults:
+            fp.write("[%s]\n" % DEFAULTSECT)
+            fp.write("\n")
+            for (key, value) in self._defaults.items():
+                fp.write("%s = %s\n" % (key, str(value)))
+                fp.write("\n")
+        for section in self._sections:
+            fp.write("[%s]\n" % section)
+            fp.write("\n")
+            for (key, value) in self._sections[section].items():
+                if key == "__name__":
+                    continue
+                if (value is not None) or (self._optcre == self.OPTCRE):
+                    key = " = ".join((key, str(value)))
+                fp.write("%s\n" % (key))
+                fp.write("\n")
 
     def get(self, option, raw=True, variables=None, section=None):
         """
@@ -437,30 +480,36 @@ def split_line(line, sep='|'):
 
     :param str line: String line to split
     :param str sep: Separator character
-    :returns:  A list of string fields
+    :returns: The fields
+    :rtype: *list*
 
     """
     fields = map(string.strip, line.split(sep))
     return fields
 
 
-def build_line(fields, sep=' | ', length=None):
+def build_line(fields, sep=' | ', length=None, indent=False):
     """
     Build a line from fields adding trailing and leading characters.
 
     :param tuple fields: Tuple of ordered fields
     :param str sep: Separator character
     :param tuple length: The fields length
-    :returns: A string fields
+    :param boolean indent: True to indent the line
+    :returns: The line
+    :rtype: *str*
 
     """
     if length:
         fields = [format(fields[i], str(length[i])) for i in range(len(fields))]
     line = sep.join(fields)
-    return line
+    if indent:
+        return ' ' * 4 + line
+    else:
+        return line
 
 
-def align(fields):
+def lengths(fields):
     """
     Returns the maximum length among items of a list of tuples.
     :param list fields:
