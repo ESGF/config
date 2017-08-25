@@ -12,7 +12,7 @@ import re
 import string
 from ConfigParser import ConfigParser, _Chainmap, DEFAULTSECT, MAX_INTERPOLATION_DEPTH
 
-from ESGConfigParser.exceptions import *
+from custom_exceptions import *
 
 
 class SectionParser(ConfigParser):
