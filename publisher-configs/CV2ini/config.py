@@ -11,7 +11,8 @@ DATASET_ID = '%(project)s.%(activity)s.%(institute)s.%(model)s.%(experiment)s.%(
 DATASET_FORMAT = '%(project_description)s, model=%(model_description)s, experiment=%(experiment_description)s, ensemble=%(ensemble)s, version=%(version)s'
 
 # netCDF global attributes to extract in addition of DRS facets
-EXTRACT_GLOBAL_NC = ['realm',
+EXTRACT_GLOBAL_NC = ['mip_era',
+                     'realm',
                      'frequency',
                      'product',
                      'nominal_resolution',
