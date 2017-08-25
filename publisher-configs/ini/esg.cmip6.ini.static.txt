@@ -1,0 +1,52 @@
+
+category_defaults =
+    project | CMIP6
+    mip_era | CMIP6
+
+mip_era_options = CMIP6
+
+create_cim = true
+
+las_configure = true 
+
+maps = las_time_delta, model_cohort
+
+las_time_delta_map = map(time_frequency : las_time_delta)
+    1hr        | 1 hour
+    1hrClimMon | 1 hour
+    3hr        | 3 hours
+    6hr        | 6 hours
+    day        | 1 day
+    dec        | 10 years
+    fx         | fixed
+    mon        | 1 month
+    monClim    | 1 month
+    subhr      | 1 minute
+    yr         | 1 year
+
+thredds_exclude_variables = a, a_bnds, alev1, alevel, alevhalf, alt40, b, b_bnds, basin, bnds, bounds_lat, bounds_lon, dbze, depth, depth0m, depth100m, depth_bnds, geo_region, height, height10m, height2m, lat, lat_bnds, latitude, latitude_bnds, layer, lev, lev_bnds, location, lon, lon_bnds, longitude, longitude_bnds, olayer100m, olevel, oline, p0, p220, p500, p560, p700, p840, plev, plev3, plev7, plev8, plev_bnds, plevs, pressure1, region, rho, scatratio, sdepth, sdepth1, sza5, tau, tau_bnds, time, time1, time2, time_bnds, vegtype
+
+variable_locate = ps, ps_
+
+variable_per_file = true
+
+version_by_date = true
+
+min_cmor_version = 3.2.5
+
+handler = esgcet.config.cmip6_handler:CMIP6Handler
+
+realm_delimiter = space
+
+min_cf_version = 1.6
+
+cmor_table_path = /usr/local/cmip6-cmor-tables/Tables
+
+time_frequency_options = 1hr, 1hrClimMon, 3hr, 6hr, day, dec, fx, mon, monClim, subhr, yr
+
+filename_format = %(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s_%(grid_label)s_[%(period_start)s-%(period_end)s].nc
+dataset_name_format = project=%(project_description)s, model=%(model_description)s, experiment=%(experiment_description)s, time frequency=%(frequency)s, modeling realm=%(realm)s, ensemble=%(ensemble)s, version=%(version)s
+
+ensemble_pattern = r%(digit)si%(digit)sp%(digit)sf%(digit)s
+variable_pattern = %(string)s
+version_pattern = v%(digit)s 
