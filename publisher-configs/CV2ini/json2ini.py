@@ -160,7 +160,7 @@ if __name__ == "__main__":
     # Get all facet keys from format elements
     facets = get_facets()
     config.set('categories', get_categories(facets), newline=True)
-    config.set('category_defaults', build_line(('project', 'CMIP6'), indent=True), newline=True)
+    config.set('category_defaults', build_line(('mip_era', 'CMIP6'), indent=True), newline=True)
     config.set('filename_format', FILENAME_FORMAT)
     config.set('directory_format', DIRECTORY_FORMAT)
     config.set('dataset_id', DATASET_ID)
@@ -214,8 +214,18 @@ if __name__ == "__main__":
     for frequency in content.keys():
         las_frequencies.append((frequency, LAS_FREQUENCIES[frequency]))
     las_frequencies = tuple(
-        [build_line(frequency, length=lengths(las_frequencies), indent=True) for frequency in las_frequencies])
+        [build_line(frequency, length=lengths(las_frequencies), indent=True) for frequency in sorted(las_frequencies)])
     config.set('las_time_delta_map', build_line((header,) + las_frequencies, sep='\n'))
+    # Add model_cohort_map
+    declare_map(config, 'model_cohort')
+    header = 'map(model : model_cohort)'
+    content = get_json_content('source_id', auth=auth, devel=args.devel)
+    model_cohort = []
+    for model in content.keys():
+        model_cohort.append((model, content[model]['cohort'][0]))
+    model_cohort = tuple(
+        [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
+    config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
     config.set('min_cf_version', MIN_CF_VERSION)
