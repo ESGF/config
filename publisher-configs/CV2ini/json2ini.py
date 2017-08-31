@@ -160,7 +160,10 @@ if __name__ == "__main__":
     # Get all facet keys from format elements
     facets = get_facets()
     config.set('categories', get_categories(facets), newline=True)
-    config.set('category_defaults', build_line(('mip_era', 'CMIP6'), indent=True), newline=True)
+    defaults = [('project', 'CMIP6'), ('mip_era', 'CMIP6')]
+    defaults = tuple(
+        [build_line(default, length=lengths(defaults), indent=True) for default in sorted(defaults)])
+    config.set('category_defaults', build_line(defaults, sep='\n'), newline=True)
     config.set('filename_format', FILENAME_FORMAT)
     config.set('directory_format', DIRECTORY_FORMAT)
     config.set('dataset_id', DATASET_ID)
