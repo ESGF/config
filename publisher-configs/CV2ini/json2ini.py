@@ -160,7 +160,10 @@ if __name__ == "__main__":
     # Get all facet keys from format elements
     facets = get_facets()
     config.set('categories', get_categories(facets), newline=True)
-    config.set('category_defaults', build_line(('mip_era', 'CMIP6'), indent=True), newline=True)
+    defaults = [('project', 'CMIP6'), ('mip_era', 'CMIP6')]
+    defaults = tuple(
+        [build_line(default, length=lengths(defaults), indent=True) for default in sorted(defaults)])
+    config.set('category_defaults', build_line(defaults, sep='\n'), newline=True)
     config.set('filename_format', FILENAME_FORMAT)
     config.set('directory_format', DIRECTORY_FORMAT)
     config.set('dataset_id', DATASET_ID)
@@ -202,13 +205,13 @@ if __name__ == "__main__":
                              sorted(institutes)])
                         config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
         rank += 1
-    # Add time_frequency options
-    content = get_json_content('time_frequency', auth=auth, devel=args.devel)
+    # Add frequency options
+    content = get_json_content('frequency', auth=auth, devel=args.devel)
     values = content.keys()
-    config.set('{}_options'.format('time_frequency'), build_line(tuple(sorted(values)), sep=', '))
+    config.set('{}_options'.format('frequency'), build_line(tuple(sorted(values)), sep=', '))
     # Add las_time_delta_map
     declare_map(config, 'las_time_delta')
-    header = 'map(time_frequency : las_time_delta)'
+    header = 'map(frequency : las_time_delta)'
     content = get_json_content('frequency', auth=auth, devel=args.devel)
     las_frequencies = []
     for frequency in content.keys():
