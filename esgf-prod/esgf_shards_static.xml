@@ -27,5 +27,6 @@
     <value>esgf-node.ipsl.upmc.fr/solr</value>
     <value>esg-dn1.nsc.liu.se/solr</value>
     <value>esgf-index1.ceda.ac.uk/solr</value>
+    <value>esg.pik-potsdam.de/solr</value>
      
 </shards>
