@@ -202,13 +202,13 @@ if __name__ == "__main__":
                              sorted(institutes)])
                         config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
         rank += 1
-    # Add time_frequency options
-    content = get_json_content('time_frequency', auth=auth, devel=args.devel)
+    # Add frequency options
+    content = get_json_content('frequency', auth=auth, devel=args.devel)
     values = content.keys()
-    config.set('{}_options'.format('time_frequency'), build_line(tuple(sorted(values)), sep=', '))
+    config.set('{}_options'.format('frequency'), build_line(tuple(sorted(values)), sep=', '))
     # Add las_time_delta_map
     declare_map(config, 'las_time_delta')
-    header = 'map(time_frequency : las_time_delta)'
+    header = 'map(frequency : las_time_delta)'
     content = get_json_content('frequency', auth=auth, devel=args.devel)
     las_frequencies = []
     for frequency in content.keys():

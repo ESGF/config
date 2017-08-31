@@ -3,17 +3,16 @@
 
 
 # The following three format element drive the INI attributes
-FILENAME_FORMAT = '%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
-DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity_id)s/%(institution_id)s/%(model)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s'
-DATASET_ID = '%(mip_era)s.%(activity_id)s.%(institution_id)s.%(model)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s'
+FILENAME_FORMAT = '%(variable)s_%(cmor_table)s_%(source_id)s_%(experiment)s_%(ensemble)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
+DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity_id)s/%(institution_id)s/%(source_id)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s'
+DATASET_ID = '%(mip_era)s.%(activity_id)s.%(institution_id)s.%(source_id)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s'
 
 # Optional dataset name format
-DATASET_FORMAT = 'mip_era=%(mip_era)s, model=%(model_description)s, experiment=%(experiment_description)s, ensemble=%(ensemble)s, version=%(version)s'
+DATASET_FORMAT = 'mip_era=%(mip_era)s, source_id=%(source_id)s, experiment=%(experiment_description)s, ensemble=%(ensemble)s, version=%(version)s'
 
 # netCDF global attributes to extract in addition of DRS facets
-EXTRACT_GLOBAL_NC = ['mip_era',
+EXTRACT_GLOBAL_NC = ['frequency',
                      'realm',
-                     'frequency',
                      'product',
                      'nominal_resolution',
                      'source_type',
