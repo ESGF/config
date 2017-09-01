@@ -18,7 +18,7 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'source_type',
                      'grid',
                      'branch_method',
-                      'activity_id']
+                     'activity_id']
 
 
 # netCDF variable to exclude from THREDDS
