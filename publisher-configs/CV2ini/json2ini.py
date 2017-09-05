@@ -221,7 +221,7 @@ if __name__ == "__main__":
     config.set('las_time_delta_map', build_line((header,) + las_frequencies, sep='\n'))
     # Add model_cohort_map
     declare_map(config, 'model_cohort')
-    header = 'map(model : model_cohort)'
+    header = 'map(source_id : model_cohort)'
     content = get_json_content('source_id', auth=auth, devel=args.devel)
     model_cohort = []
     for model in content.keys():
