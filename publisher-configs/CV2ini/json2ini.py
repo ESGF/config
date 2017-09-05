@@ -184,7 +184,7 @@ if __name__ == "__main__":
                     for k in content.keys():
                         values.append('    {} | {} | {}'.format(format(args.project, str(length[0])),
                                                                 format(k, str(length[1])),
-                                                                content[k]['description']))
+                                                                content[k]['description'].replace('%', 'percent')))
                     config.set('{}_options'.format(facet), build_line(tuple(values), sep='\n'), newline=True)
                 else:
                     values = content
