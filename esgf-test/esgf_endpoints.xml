@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
 <endpoints xmlns="http://www.esgf.org/whitelist">
-  <!--
-  <endpoint name="jplesgnode#archive" gridftp="esg-datanode.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
-  <endpoint name="jplesgnode#archive" gridftp="esg-vm.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
-  -->
-  <endpoint name="dd1ee76f-6d04-11e5-ba46-22000b92c6ec" gridftp="pcmdi7.llnl.gov:2811" path_out="/cmip5_css02_data" />
-  <endpoint name="e57f585c-f8eb-11e6-ba93-22000b9a448b" gridftp="esgf-dn-fedcheck.ceda.ac.uk:2811" path_out="/cmip5rt_dataroot" />
-  <endpoint name="4981cd16-d651-11e6-9ccd-22000a1e3b52" gridftp="esgf3.dkrz.de:2811" path_out="/cmip5" />
+
+    <!--
+    <endpoint name="jplesgnode#archive" gridftp="esg-datanode.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
+    <endpoint name="jplesgnode#archive" gridftp="esg-vm.jpl.nasa.gov:2811" path_out="/esg_dataroot" />
+    -->
+    <endpoint name="dd1ee76f-6d04-11e5-ba46-22000b92c6ec" gridftp="pcmdi7.llnl.gov:2811" path_out="/cmip5_css02_data" />
+    <endpoint name="e57f585c-f8eb-11e6-ba93-22000b9a448b" gridftp="esgf-dn-fedcheck.ceda.ac.uk:2811" path_out="/cmip5rt_dataroot" />
+    <endpoint name="4981cd16-d651-11e6-9ccd-22000a1e3b52" gridftp="esgf3.dkrz.de:2811" path_out="/cmip5" />
+
 </endpoints>
