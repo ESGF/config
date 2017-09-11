@@ -13,16 +13,14 @@ custom configuration of replica nodes.
     <!-- Africa -->
 
     <!-- America -->
-    <value>pcmdi11.llnl.gov/solr</value>
 
     <!-- Asia -->
 
     <!-- Australia -->
-    <value>esgftest.nci.org.au/solr</value>
 
     <!-- Europe -->
-    <value>vesgint-idx.ipsl.upmc.fr/solr</value>
-    <value>esgf-fedtest.dkrz.de/solr</value>
-    <value>esgf-index-fedcheck.ceda.ac.uk/solr</value>
+    <value>vesg4cds-idx.ipsl.upmc.fr/solr</value>
+    <value>cp4cds-index1.dkrz.de/solr</value>
+    <value>cp4cds-index1.ceda.ac.uk/solr/</value>
 
 </shards>

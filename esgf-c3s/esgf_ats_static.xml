@@ -8,12 +8,6 @@ by the node manager.
 -->
 <ats_whitelist xmlns="http://www.esgf.org/whitelist">
 
-    <!--
-      esgf-node Attribute and Registration services: it is included here to
-      allow registration for "esgf-test" nodes, otherwise it should be
-      contained in file esgf_ats.xml for nodes in the "esgf-prod" group
-    -->
-
     <!-- LLNL CMIP5 -->
     <attribute
         type="CMIP5 Research"
@@ -21,28 +15,12 @@ by the node manager.
         description="Users of CMIP5 data for non-commercial research purposes only"
         registrationService="https://esgf-node.llnl.gov/esgf-idp/secure/registrationService.htm"
     />
-  
+
     <attribute
         type="CMIP5 Commercial"
         attributeService="https://esgf-node.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
         description="Users of CMIP5 data for commercial purposes"
         registrationService="https://esgf-node.llnl.gov/esgf-idp/secure/registrationService.htm"
     />
-               
-    <!-- NASA Obs4MIPs -->
-    <attribute
-        type="NASA OBS"
-        attributeService="https://esgf-node.jpl.nasa.gov/esgf-idp/saml/soap/secure/attributeService.htm"
-        description="NASA Observational Data"
-        registrationService="https://esgf-node.jpl.nasa.gov/esgf-idp/secure/registrationService.htm"
-    />
 
-    <!-- ORNL ACME -->
-    <attribute
-        type="ACME"
-        attributeService="https://esg.ccs.ornl.gov/esgf-idp/saml/soap/secure/attributeService.htm"
-        description="ACME user group"
-        registrationService="https://esg.ccs.ornl.gov/esgf-idp/secure/registrationService.htm"
-    />
-  
-</ats_whitelist>
+ </ats_whitelist>

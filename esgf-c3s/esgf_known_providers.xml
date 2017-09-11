@@ -42,30 +42,21 @@ to confirm their username along with their password.
  <!-- Africa -->
 
  <!-- America -->
- <OP>
-  <NAME>DOE Lawrence Livermore National Lab (LLNL - TEST)</NAME>
-  <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
- </OP>
 
  <!-- Asia -->
 
  <!-- Australia -->
 
- <OP>
-  <NAME>National Computational Infrastructure (NCI - TEST)</NAME>
-  <URL>https://esgftest.nci.org.au/esgf-idp/openid/</URL>
- </OP>
-	
  <!-- Europe -->
 
  <OP>
-   <NAME>Institut Pierre Simon Laplace (IPSL - TEST)</NAME>
-   <URL>https://vesgint-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
+   <NAME>Institut Pierre Simon Laplace (IPSL - C3S)</NAME>
+   <URL>https://vesg4cds-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
 
  <OP>
-   <NAME>German Climate Computing Centre (DKRZ - TEST)</NAME>
-   <URL>https://esgf-fedtest.dkrz.de/esgf-idp/openid/</URL>
+   <NAME>German Climate Computing Centre (DKRZ - C3S)</NAME>
+   <URL>https://cp4cds-index1.dkrz.de/esgf-idp/openid/</URL>
  </OP>
 
  <OP>
