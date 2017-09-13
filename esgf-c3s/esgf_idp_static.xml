@@ -12,7 +12,8 @@
 
     <!-- Europe -->
     <value>https://vesg4cds-idx.ipsl.upmc.fr/esgf-idp/idp/openidServer.htm</value>
-    <value>https://cp4cds-index1.dkrz.de/esgf-idp/idp/openidServer.htm</value>
+    <!-- value>https://cp4cds-index1.dkrz.de/esgf-idp/idp/openidServer.htm</value -->
+    <value>https://esgf-data.dkrz.de/esgf-idp/idp/openidServer.htm</value>
     <value>https://ceda.ac.uk/OpenID/Provider/server</value>
 
 </idp_whitelist>
