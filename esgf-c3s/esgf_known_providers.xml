@@ -54,13 +54,18 @@ to confirm their username along with their password.
    <URL>https://vesg4cds-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
 
- <OP>
+ <!-- OP>
    <NAME>German Climate Computing Centre (DKRZ - C3S)</NAME>
    <URL>https://cp4cds-index1.dkrz.de/esgf-idp/openid/</URL>
+ </OP -->
+
+ <OP>
+  <NAME>German Climate Computing Centre (DKRZ)</NAME>
+  <URL>https://esgf-data.dkrz.de/esgf-idp/openid/</URL>
  </OP>
 
  <OP>
-   <!-- 
+   <!--
     CEDA will not run the ESGF IDP operationally, so there is no link
     here to a fedcheck equivalent.  Access to any IDP running on the
     CEDA fedcheck site may be blocked except for use with local node
@@ -72,4 +77,3 @@ to confirm their username along with their password.
 
 
 </OPS>
-
