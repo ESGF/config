@@ -12,12 +12,11 @@ JSON_FILE = 'CMIP6_{}.json'
 IGNORED_FACETS = ['root', 'period_start', 'period_end']
 
 # Facet mapping between INI and JSON attributes (if necessary)
-FACET_MAP = {'activity': 'activity_id',
-             'institute': 'source_id',
-             'model': 'source_id',
+FACET_MAP = {'activity_drs': 'activity_id',
+             'institute': 'institution_id',
              'experiment': 'experiment_id',
-             'cmor_table': 'table_id',
-             'time_frequency': 'frequency'}
+             'cmor_table': 'table_id'}
+
 
 # Facet patterns
 FACET_PATTERNS = {'ensemble': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
@@ -52,7 +51,7 @@ PROGRAM_DESC = \
 EPILOG = \
     """
     Developed by:\n
-    Ames, S. (LLNL - ames4@llnl.gov)\n
+    Ames, S. (DOE/LLNL - ames4@llnl.gov)\n
     Levavasseur, G. (UPMC/IPSL - glipsl@ipsl.fr)\n
 
     """

@@ -4,8 +4,8 @@
 
 # The following three format element drive the INI attributes
 FILENAME_FORMAT = '%(variable)s_%(cmor_table)s_%(source_id)s_%(experiment)s_%(ensemble)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
-DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity)s/%(institute)s/%(source_id)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s'
-DATASET_ID = '%(mip_era)s.%(activity)s.%(institute)s.%(source_id)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s'
+DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity_drs)s/%(institute)s/%(source_id)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s'
+DATASET_ID = '%(mip_era)s.%(activity_drs)s.%(institute)s.%(source_id)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s'
 
 # Optional dataset name format
 DATASET_FORMAT = 'mip_era=%(mip_era)s, source_id=%(source_id)s, experiment=%(experiment_description)s, ensemble=%(ensemble)s, version=%(version)s'
@@ -17,8 +17,8 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'nominal_resolution',
                      'source_type',
                      'grid',
-                     'branch_method']
-#                     'activity_id']
+                     'branch_method',  
+                     'activity_id:activity']  # : indicates that the GA is mapped to  a facet
 
 
 # netCDF variable to exclude from THREDDS
@@ -32,7 +32,7 @@ THREDDS_EXCLUDE_VARIABLES = ['a', 'a_bnds', 'alev1', 'alevel', 'alevhalf', 'alt4
                              'time2', 'time_bnds', 'vegtype']
 
 # netCDF global attribute delimiter
-ATTRIBUTE_DELIMITERS = {'realm': 'space'}
+ATTRIBUTE_DELIMITERS = {'realm': 'space', 'activity': 'space'}  # use the facet name
 
 # Handler
 HANDLER = 'esgcet.config.cmip6_handler:CMIP6Handler'
@@ -51,3 +51,4 @@ CREATE_CIM = 'true'
 
 # LAS configuration boolean
 LAS_CONFIGURE = 'true'
+
