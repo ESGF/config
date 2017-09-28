@@ -25,19 +25,25 @@ FACET_PATTERNS = {'ensemble': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
 
 # LAS time frequencies
 LAS_FREQUENCIES = {'1hr': '1 hour',
-                   '1hrClimMon': '1 hour',
+                   '1hrCM': '1 hour',
+                   '1hrPt': '1 hour',
                    '3hr': '3 hours',
+                   '3hrPt': '3 hours',
                    '6hr': '6 hours',
+                   '6hrPt': '6 hours',
                    'day': '1 day',
                    'MonDay': 'Monthly(Day)',
                    'dec': '10 years',
                    'fx': 'fixed',
                    'mon': '1 month',
-                   'monClim': '1 month',
+                   'monC': '1 month',
+                   'monC': '1 month',
                    'MonNight': 'Monthly(Nigh)',
                    'sem': 'seasonal mean',
                    'subhr': '1 minute',
-                   'yr': '1 year'}
+                   'subhrPt': '1 minute',
+                   'yr': '1 year',
+                   'yrPt': '1 year'}
 
 # Help
 PROGRAM_DESC = \
