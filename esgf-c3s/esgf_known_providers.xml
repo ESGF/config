@@ -50,18 +50,13 @@ to confirm their username along with their password.
  <!-- Europe -->
 
  <OP>
-   <NAME>Institut Pierre Simon Laplace (IPSL - C3S)</NAME>
-   <URL>https://vesg4cds-idx.ipsl.upmc.fr/esgf-idp/openid/</URL>
+   <NAME>Institut Pierre Simon Laplace (IPSL)</NAME>
+   <URL>https://esgf-node.ipsl.upmc.fr/esgf-idp/openid/</URL>
  </OP>
 
- <!-- OP>
-   <NAME>German Climate Computing Centre (DKRZ - C3S)</NAME>
-   <URL>https://cp4cds-index1.dkrz.de/esgf-idp/openid/</URL>
- </OP -->
-
  <OP>
-  <NAME>German Climate Computing Centre (DKRZ)</NAME>
-  <URL>https://esgf-data.dkrz.de/esgf-idp/openid/</URL>
+   <NAME>German Climate Computing Centre (DKRZ)</NAME>
+   <URL>https://esgf-data.dkrz.de/esgf-idp/openid/</URL>
  </OP>
 
  <OP>

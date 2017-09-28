@@ -12,6 +12,8 @@ from constants import *
 from git_exceptions import *
 
 
+import pdb
+
 def get_args():
     parser = argparse.ArgumentParser(
         prog='json2ini',
@@ -193,11 +195,14 @@ if __name__ == "__main__":
                 try:
                     config.set('{}_pattern'.format(facet), FACET_PATTERNS[facet])
                 except KeyError:
-                    content = get_json_content(facet, auth=auth, devel=args.devel)
+                    
                     declare_map(config, facet)
                     if facet == 'institute':
-                        header = 'map(model : {})'.format(facet)
+
+                        content = get_json_content('source_id', auth=auth, devel=args.devel)
+                        header = 'map(source_id : {})'.format(facet)
                         institutes = []
+
                         for model in content.keys():
                             institutes.append((model, content[model]['institution_id'][0]))
                         institutes = tuple(
