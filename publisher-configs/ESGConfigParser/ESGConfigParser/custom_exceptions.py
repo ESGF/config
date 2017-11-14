@@ -25,20 +25,20 @@ class ConfigException(Exception):
     Basic exception for configuration parsing errors.
 
     """
-    # Constants initialized with configuration esgini instantiation
+    # Constants initialized with configuration instantiation
     # Configuration files to read
-    FILES = []
+    FILE = None
     # Section to parse
     SECTION = None
 
     def __init__(self, msg):
-        self.config_files = ConfigException.FILES
+        self.config_file = ConfigException.FILE
         self.section = ConfigException.SECTION
         self.msg = msg
         if self.section:
             self.msg += "\n<section: '{}'>".format(self.section)
-        for config_file in self.config_files:
-            self.msg += "\n<config file: '{}'>".format(config_file)
+        if self.config_file:
+            self.msg += "\n<config file: '{}'>".format(self.config_file)
         super(ConfigException, self).__init__(self.msg)
 
 

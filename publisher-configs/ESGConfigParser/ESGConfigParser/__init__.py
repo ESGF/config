@@ -28,7 +28,7 @@ class SectionParser(ConfigParser):
         ConfigException.SECTION = section
         self.section = section
         if directory:
-            self.files = list()
+            self.file = None
             self.parse(directory)
         else:
             self.add_section(section)
@@ -70,7 +70,7 @@ class SectionParser(ConfigParser):
                     continue
                 if (value is not None) or (self._optcre == self.OPTCRE):
                     key = " = ".join((key, str(value)))
-                fp.write("%s\n" % (key))
+                fp.write("%s\n" % key)
                 fp.write("\n")
 
     def get(self, option, raw=True, variables=None, section=None):
@@ -121,7 +121,7 @@ class SectionParser(ConfigParser):
         Resets exception constants
 
         """
-        ConfigException.FILES = []
+        ConfigException.FILE = None
         ConfigException.SECTION = None
 
     def parse(self, path):
@@ -129,7 +129,7 @@ class SectionParser(ConfigParser):
         Parses the configuration files.
 
         :param str path: The directory path of configuration files
-        :returns: The configuration file esgini
+        :returns: The configuration file
         :rtype: *CfgParser*
         :raises Error: If no configuration file exists
         :raises Error: If no configuration section exist
@@ -137,12 +137,14 @@ class SectionParser(ConfigParser):
 
         """
         # If the section is not "[project:.*]", only read esg.ini
-        self.read(os.path.join(path, 'esg.ini'))
+        ConfigException.FILE, self.file = os.path.join(path, 'esg.ini')
+        self.read(self.file)
         if re.match(r'project:.*', self.section) and self.section not in self.sections():
             project = self.section.split('project:')[1]
-            if not os.path.isfile(os.path.join(path, 'esg.{}.ini'.format(project))):
-                raise NoConfigFile(os.path.join(path, 'esg.{}.ini'.format(project)))
-            self.read(os.path.join(path, 'esg.{}.ini'.format(project)))
+            ConfigException.FILE, self.file = os.path.join(path, 'esg.{}.ini'.format(project))
+            if not os.path.isfile(self.file):
+                raise NoConfigFile(self.file)
+            self.read(self.file)
         if self.section not in self.sections():
             raise NoConfigSection()
         if not self:
@@ -162,8 +164,6 @@ class SectionParser(ConfigParser):
                 continue
             self._read(fp, filename)
             fp.close()
-            ConfigException.FILES.append(filename)
-            self.files.append(filename)
 
     def sections(self, default=True):
         """
