@@ -16,7 +16,7 @@ class NoConfigFile(Exception):
 
     def __init__(self, config_file):
         self.msg = "File not found"
-        self.msg += "\n<config file: '{}'>".format(config_file)
+        self.msg += "\n<file: '{}'>".format(config_file)
         super(self.__class__, self).__init__(self.msg)
 
 
@@ -38,7 +38,7 @@ class ConfigException(Exception):
         if self.section:
             self.msg += "\n<section: '{}'>".format(self.section)
         if self.config_file:
-            self.msg += "\n<config file: '{}'>".format(self.config_file)
+            self.msg += "\n<file: '{}'>".format(self.config_file)
         super(ConfigException, self).__init__(self.msg)
 
 
@@ -49,7 +49,7 @@ class EmptyConfigFile(ConfigException):
     """
 
     def __init__(self):
-        self.msg = "Empty configuration esgini"
+        self.msg = "Empty configuration file"
         super(self.__class__, self).__init__(self.msg)
 
 
