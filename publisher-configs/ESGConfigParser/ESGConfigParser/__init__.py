@@ -137,11 +137,13 @@ class SectionParser(ConfigParser):
 
         """
         # If the section is not "[project:.*]", only read esg.ini
-        ConfigException.FILE, self.file = os.path.join(path, 'esg.ini')
+        ConfigException.FILE = os.path.join(path, 'esg.ini')
+        self.file = os.path.join(path, 'esg.ini')
         self.read(self.file)
         if re.match(r'project:.*', self.section) and self.section not in self.sections():
             project = self.section.split('project:')[1]
-            ConfigException.FILE, self.file = os.path.join(path, 'esg.{}.ini'.format(project))
+            ConfigException.FILE = os.path.join(path, 'esg.{}.ini'.format(project))
+            self.file = os.path.join(path, 'esg.{}.ini'.format(project))
             if not os.path.isfile(self.file):
                 raise NoConfigFile(self.file)
             self.read(self.file)
