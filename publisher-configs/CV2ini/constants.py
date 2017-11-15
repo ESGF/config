@@ -12,7 +12,7 @@ JSON_FILE = 'CMIP6_{}.json'
 IGNORED_FACETS = ['root', 'period_start', 'period_end']
 
 # Facet mapping between INI and JSON attributes (if necessary)
-FACET_MAP = {'activity_drs': 'activity_id',
+FACET_MAP = {'activity': 'activity_id',
              'institute': 'institution_id',
              'experiment': 'experiment_id',
              'cmor_table': 'table_id'}
@@ -37,7 +37,7 @@ LAS_FREQUENCIES = {'1hr': '1 hour',
                    'fx': 'fixed',
                    'mon': '1 month',
                    'monC': '1 month',
-                   'monC': '1 month',
+                   'monPt': '1 month',
                    'MonNight': 'Monthly(Nigh)',
                    'sem': 'seasonal mean',
                    'subhr': '1 minute',

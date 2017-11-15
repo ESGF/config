@@ -182,6 +182,9 @@ cmip6 | AWI-CM-1-0-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for P
 cmip6 | AWI-CM-1-0-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-CM-1-0-MR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-CM-1-0-MR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
+cmip6 | BCC-CSM2-HR |  | BCC, Beijing Climate Center, Beijing 100081, China
+cmip6 | BCC-CSM2-MR |  | BCC, Beijing Climate Center, Beijing 100081, China
+cmip6 | BCC-ESM1 |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
@@ -232,10 +235,14 @@ cmip6 | EMAC-2-53-AerChem |  | MESSy-Consortium, The Modular Earth Submodel Syst
 cmip6 | EMAC-2-53-AerChem |  | MESSy-Consortium, The Modular Earth Submodel System (MESSy) Consortium, represented by the Institute for Physics of the Atmosphere, Deutsches Zentrum fur Luft- und Raumfahrt (DLR), Wessling, Bavaria 82234, Germany
 cmip6 | EMAC-2-53-Vol |  | MESSy-Consortium, The Modular Earth Submodel System (MESSy) Consortium, represented by the Institute for Physics of the Atmosphere, Deutsches Zentrum fur Luft- und Raumfahrt (DLR), Wessling, Bavaria 82234, Germany
 cmip6 | EMAC-2-53-Vol |  | MESSy-Consortium, The Modular Earth Submodel System (MESSy) Consortium, represented by the Institute for Physics of the Atmosphere, Deutsches Zentrum fur Luft- und Raumfahrt (DLR), Wessling, Bavaria 82234, Germany
+cmip6 | FGOALS-f3-H |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
+cmip6 | FGOALS-f3-L |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
+cmip6 | FGOALS-g3 |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
 cmip6 | GFDL-AM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-AM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-CM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-CM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
+cmip6 | GFDL-ESM2M |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-ESM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-ESM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GISS-E2-1G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
@@ -250,8 +257,10 @@ cmip6 | HadGEM3-GC31-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exete
 cmip6 | HadGEM3-GC31-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | HadGEM3-GC31-LM |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | HadGEM3-GC31-LM |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
+cmip6 | HadGEM3-GC31-MH |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | HadGEM3-GC31-MM |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | HadGEM3-GC31-MM |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
+cmip6 | ICON-ESM-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | IITM-ESM |  | CCCR-IITM, Centre for Climate Change Research, Indian Institute of Tropical Meteorology Pune, Maharashtra 411 008, India
 cmip6 | IITM-ESM |  | CCCR-IITM, Centre for Climate Change Research, Indian Institute of Tropical Meteorology Pune, Maharashtra 411 008, India
 cmip6 | INM-CM4-8 |  | INM, Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia
@@ -268,12 +277,11 @@ cmip6 | MIROC-ES2L |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science an
 cmip6 | MIROC-ES2L |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
 cmip6 | MIROC6 |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
 cmip6 | MIROC6 |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
+cmip6 | MPI-ESM-1-2-HR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
+cmip6 | MPI-ESM-1-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MPIESM-1-2-HAM |  | HAMMOZ-Consortium, ETH Zurich, Switzerland; Max Planck Institut fur Meteorologie, Germany; Forschungszentrum Julich, Germany; University of Oxford, UK; Finnish Meteorological Institute, Finland; Leibniz Institute for Tropospheric Research, Germany; Center for Climate Systems Modeling (C2SM) at ETH Zurich, Switzerland
 cmip6 | MPIESM-1-2-HR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
-cmip6 | MPIESM-1-2-HR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MPIESM-1-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
-cmip6 | MPIESM-1-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
-cmip6 | MPIESM-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MPIESM-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MRI-AGCM3-2 |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
 cmip6 | MRI-ESM2-0 |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan

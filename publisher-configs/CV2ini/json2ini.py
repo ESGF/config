@@ -136,16 +136,16 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'version', 'ensemble', 'institute']:
+        if facet in ['variable', 'ensemble', 'institute']:
             facet_type = 'string'
-        categories.append((facet, facet_type, 'true', 'true', str(i)))
+        if facet not in ['version']:
+            categories.append((facet, facet_type, 'true', 'true', str(i)))
     for facet in EXTRACT_GLOBAL_NC:
         categories.append((facet, 'string', 'false', 'true', str(i)))
         i += 1
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
-
 
 def declare_map(config, facet):
     maps = []
@@ -214,6 +214,7 @@ if __name__ == "__main__":
     content = get_json_content('frequency', auth=auth, devel=args.devel)
     values = content.keys()
     config.set('{}_options'.format('frequency'), build_line(tuple(sorted(values)), sep=', '))
+    config.set('{}_pattern'.format('version'), FACET_PATTERNS['version'])
     # Add las_time_delta_map
     declare_map(config, 'las_time_delta')
     header = 'map(frequency : las_time_delta)'
