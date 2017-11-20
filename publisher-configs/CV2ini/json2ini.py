@@ -237,13 +237,9 @@ if __name__ == "__main__":
     config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
-    config.set('min_cf_version', MIN_CF_VERSION)
     for att, delimiter in ATTRIBUTE_DELIMITERS.iteritems():
         config.set('{}_delimiter'.format(att), delimiter)
-    config.set('cmor_table_path', CMOR_TABLE_PATH)
-    config.set('CREATE_CIM', CREATE_CIM)
     config.set('las_configure', LAS_CONFIGURE)
-    config.set('cmor_table_path', CMOR_TABLE_PATH)
     config.set('extract_global_attrs', build_line(tuple(EXTRACT_GLOBAL_NC), sep=', '))
     config.set('thredds_exclude_variables', build_line(tuple(THREDDS_EXCLUDE_VARIABLES), sep=', '))
     config.set('variable_locate', build_line(('ps', 'ps_'), sep=', '))
