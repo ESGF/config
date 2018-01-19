@@ -136,7 +136,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'ensemble', 'institute']:
+        if facet in ['variable', 'member_id', 'institution_id']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -177,10 +177,10 @@ if __name__ == "__main__":
         if strtobool(mandatory):
             if facet_type == 'enum':
                 content = get_json_content(facet, auth=auth, devel=args.devel)
-                if facet == 'model':
+                if facet == 'source_id':
                     values = content.keys()
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
-                elif facet == 'experiment':
+                elif facet == 'experiment_id':
                     values = []
                     length = lengths([(args.project.lower(), k) for k in content.keys()])
                     for k in content.keys():
@@ -197,7 +197,7 @@ if __name__ == "__main__":
                 except KeyError:
                     
                     declare_map(config, facet)
-                    if facet == 'institute':
+                    if facet == 'institution_id':
 
                         content = get_json_content('source_id', auth=auth, devel=args.devel)
                         header = 'map(source_id : {})'.format(facet)
