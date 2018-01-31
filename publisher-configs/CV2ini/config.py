@@ -3,7 +3,7 @@
 
 
 # The following three format element drive the INI attributes
-FILENAME_FORMAT = '%(variable)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%(member_id)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
+FILENAME_FORMAT = '%(variable)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%(variant_label)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
 DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity_id)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/%(variant_label)s/%(table_id)s/%(variable)s/%(grid_label)s/%(version)s'
 DATASET_ID = '%(mip_era)s.%(activity_id)s.%(institution_id)s.%(source_id)s.%(experiment_id)s.%(variant_label)s.%(table_id)s.%(variable)s.%(grid_label)s'
 

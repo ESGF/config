@@ -142,7 +142,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'member_id', 'institution_id']:
+        if facet in ['variable', 'variant_label']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
