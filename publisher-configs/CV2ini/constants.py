@@ -16,7 +16,7 @@ FACET_MAP = {}
 
 # Facet patterns
 FACET_PATTERNS = {'variant_label': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
-                  'variable': '%(string)s',
+                  'variable_id': '%(string)s',
                   'version': 'v%(digit)s'}
 
 # LAS time frequencies

@@ -12,8 +12,6 @@ from constants import *
 from git_exceptions import *
 
 
-import pdb
-
 def get_args():
     parser = argparse.ArgumentParser(
         prog='json2ini',
@@ -97,17 +95,6 @@ def get_json_content(facet, auth=None, devel=False):
     return requests.get(r.json()['download_url'], auth=auth).json()[WCRP_facet]
 
 
-def authenticate(self):
-    """
-    Build GitHub HTTP authenticator
-
-    :returns: The HTTP authenticator
-    :rtype: *requests.auth.HTTPBasicAuth*
-
-    """
-    return HTTPBasicAuth(self.gh_user, self.gh_password) if self.gh_user and self.gh_password else None
-
-
 def find_facets(facets, format):
     for i, v in enumerate(re.findall(re.compile(r'%\(([^()]*)\)s'), format)):
         try:
@@ -131,18 +118,12 @@ def get_facets(filename_vars=True, directory_vars=True, dataset_vars=True, datas
     return facets
 
 
-def check_cat(x):
-    if ':' in x:
-        parts=x.split(':')
-        return parts[1]
-
-
 def get_categories(facets):
     categories = []
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'variant_label']:
+        if facet in ['institution_id', 'variable_id', 'variant_label']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -152,6 +133,7 @@ def get_categories(facets):
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
+
 
 def declare_map(config, facet):
     maps = []
@@ -189,7 +171,7 @@ if __name__ == "__main__":
                 elif facet == 'experiment_id':
                     values = []
                     length = lengths([(args.project.lower(), k) for k in content.keys()])
-                    for k in content.keys():
+                    for k in sorted(content.keys()):
                         values.append('    {} | {} | {}'.format(format(args.project, str(length[0])),
                                                                 format(k, str(length[1])),
                                                                 content[k]['description'].replace('%', 'percent')))
@@ -203,11 +185,9 @@ if __name__ == "__main__":
                 except KeyError:
                     declare_map(config, facet)
                     if facet == 'institution_id':
-
                         content = get_json_content('source_id', auth=auth, devel=args.devel)
                         header = 'map(source_id : {})'.format(facet)
                         institutes = []
-
                         for model in content.keys():
                             institutes.append((model, content[model]['institution_id'][0]))
                         institutes = tuple(
@@ -242,6 +222,8 @@ if __name__ == "__main__":
     config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
+    config.set('min_cf_version', MIN_CF_VERSION)
+    config.set('create_cim', CREATE_CIM)
     for att, delimiter in ATTRIBUTE_DELIMITERS.iteritems():
         config.set('{}_delimiter'.format(att), delimiter)
     config.set('las_configure', LAS_CONFIGURE)
