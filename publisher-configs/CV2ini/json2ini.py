@@ -131,12 +131,18 @@ def get_facets(filename_vars=True, directory_vars=True, dataset_vars=True, datas
     return facets
 
 
+def check_cat(x):
+    if ':' in x:
+        parts=x.split(':')
+        return parts[1]
+
+
 def get_categories(facets):
     categories = []
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'member_id', 'institution_id']:
+        if facet in ['variable', 'variant_label']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -195,7 +201,6 @@ if __name__ == "__main__":
                 try:
                     config.set('{}_pattern'.format(facet), FACET_PATTERNS[facet])
                 except KeyError:
-                    
                     declare_map(config, facet)
                     if facet == 'institution_id':
 
