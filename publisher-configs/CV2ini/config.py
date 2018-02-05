@@ -17,6 +17,7 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'nominal_resolution',
                      'source_type',
                      'grid',
+                     'creation_date',
                      'branch_method']  # : indicates that the GA is mapped to  a facet
 
 
