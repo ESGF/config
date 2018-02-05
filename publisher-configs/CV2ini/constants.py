@@ -12,15 +12,11 @@ JSON_FILE = 'CMIP6_{}.json'
 IGNORED_FACETS = ['root', 'period_start', 'period_end']
 
 # Facet mapping between INI and JSON attributes (if necessary)
-FACET_MAP = {'activity': 'activity_id',
-             'institute': 'institution_id',
-             'experiment': 'experiment_id',
-             'cmor_table': 'table_id'}
-
+FACET_MAP = {}
 
 # Facet patterns
-FACET_PATTERNS = {'ensemble': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
-                  'variable': '%(string)s',
+FACET_PATTERNS = {'variant_label': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
+                  'variable_id': '%(string)s',
                   'version': 'v%(digit)s'}
 
 # LAS time frequencies

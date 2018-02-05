@@ -3,12 +3,12 @@
 
 
 # The following three format element drive the INI attributes
-FILENAME_FORMAT = '%(variable)s_%(cmor_table)s_%(source_id)s_%(experiment)s_%(ensemble)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
-DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity)s/%(institute)s/%(source_id)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s'
-DATASET_ID = '%(mip_era)s.%(activity)s.%(institute)s.%(source_id)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s'
+FILENAME_FORMAT = '%(variable_id)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%(variant_label)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc'
+DIRECTORY_FORMAT = '%(root)s/%(mip_era)s/%(activity_id)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/%(variant_label)s/%(table_id)s/%(variable_id)s/%(grid_label)s/%(version)s'
+DATASET_ID = '%(mip_era)s.%(activity_id)s.%(institution_id)s.%(source_id)s.%(experiment_id)s.%(variant_label)s.%(table_id)s.%(variable_id)s.%(grid_label)s'
 
 # Optional dataset name format
-DATASET_FORMAT = 'mip_era=%(mip_era)s, source_id=%(source_id)s, experiment=%(experiment_description)s, ensemble=%(ensemble)s, version=%(version)s'
+DATASET_FORMAT = 'mip_era=%(mip_era)s, source_id=%(source_id)s, experiment=%(experiment_description)s, variant_label=%(variant_label)s, variable=%(variable_id)s, version=%(version)s'
 
 # netCDF global attributes to extract in addition of DRS facets
 EXTRACT_GLOBAL_NC = ['frequency',
@@ -17,8 +17,7 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'nominal_resolution',
                      'source_type',
                      'grid',
-                     'branch_method',  
-                     'activity_id:activity']  # : indicates that the GA is mapped to  a facet
+                     'branch_method']  # : indicates that the GA is mapped to  a facet
 
 
 # netCDF variable to exclude from THREDDS
@@ -32,7 +31,7 @@ THREDDS_EXCLUDE_VARIABLES = ['a', 'a_bnds', 'alev1', 'alevel', 'alevhalf', 'alt4
                              'time2', 'time_bnds', 'vegtype']
 
 # netCDF global attribute delimiter
-ATTRIBUTE_DELIMITERS = {'realm': 'space', 'activity': 'space'}  # use the facet name
+ATTRIBUTE_DELIMITERS = {'realm': 'space', 'activity_id': 'space', 'source_type': 'space'}  # use the facet name
 
 # Handler
 HANDLER = 'esgcet.config.cmip6_handler:CMIP6Handler'
