@@ -130,6 +130,7 @@ def get_categories(facets):
     for facet in EXTRACT_GLOBAL_NC:
         categories.append((facet, 'string', 'false', 'true', str(i)))
         i += 1
+    categories.append(('experiment_description', 'string', 'false', 'true', '17'))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
@@ -150,7 +151,7 @@ if __name__ == "__main__":
     # Get all facet keys from format elements
     facets = get_facets()
     config.set('categories', get_categories(facets), newline=True)
-    defaults = [('project', 'CMIP6'), ('mip_era', 'CMIP6')]
+    defaults = [('project', 'CMIP6')]
     defaults = tuple(
         [build_line(default, length=lengths(defaults), indent=True) for default in sorted(defaults)])
     config.set('category_defaults', build_line(defaults, sep='\n'), newline=True)
@@ -158,6 +159,7 @@ if __name__ == "__main__":
     config.set('directory_format', DIRECTORY_FORMAT)
     config.set('dataset_id', DATASET_ID)
     config.set('dataset_name_format', DATASET_FORMAT)
+    config.set('mip_era_options', MIP_ERA)
     categories = config.get_options_from_table('categories')
     rank = 1
     while rank in map(int, zip(*categories)[4]):
@@ -169,13 +171,19 @@ if __name__ == "__main__":
                     values = content.keys()
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
                 elif facet == 'experiment_id':
-                    values = []
-                    length = lengths([(args.project.lower(), k) for k in content.keys()])
+                    # experiment_id_options
+                    values = content.keys()
+                    config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
+                    # experiment_description_map
+                    declare_map(config, 'experiment_description')
+                    header = 'map({} : experiment_description)'.format(facet)
+                    descriptions = []
                     for k in sorted(content.keys()):
-                        values.append('    {} | {} | {}'.format(format(args.project, str(length[0])),
-                                                                format(k, str(length[1])),
-                                                                content[k]['description'].replace('%', 'percent')))
-                    config.set('{}_options'.format(facet), build_line(tuple(values), sep='\n'), newline=True)
+                        descriptions.append((k, content[k]['description'].replace('%', 'percent')))
+                    descriptions = tuple(
+                        [build_line(description, length=lengths(descriptions), indent=True) for description in
+                         sorted(descriptions)])
+                    config.set('experiment_description_map', build_line((header,) + descriptions, sep='\n'))
                 else:
                     values = content
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
@@ -222,8 +230,8 @@ if __name__ == "__main__":
     config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
-    config.set('min_data_specs_version', MIN_CF_VERSION)
-    config.set('min_cf_version', MIN_DS_VERSION)
+    config.set('min_cf_version', MIN_CF_VERSION)
+    config.set('min_data_specs_version', MIN_DS_VERSION)
     config.set('create_cim', CREATE_CIM)
     for att, delimiter in ATTRIBUTE_DELIMITERS.iteritems():
         config.set('{}_delimiter'.format(att), delimiter)

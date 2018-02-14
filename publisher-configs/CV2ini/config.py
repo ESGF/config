@@ -37,19 +37,18 @@ ATTRIBUTE_DELIMITERS = {'realm': 'space', 'activity_id': 'space', 'source_type':
 # Handler
 HANDLER = 'esgcet.config.cmip6_handler:CMIP6Handler'
 
+# MIP Era value
+MIP_ERA = 'CMIP6'
+
 # Oldest CMOR version allowed
-MIN_CMOR_VERSION = '3.2.4'
+MIN_CMOR_VERSION = '3.3.0'
 
 # Oldest Data Specs version allowed
 
-MIN_DS_VERSION
-
+MIN_DS_VERSION = '01.00.13'
 
 # Oldest CF version allowed
 MIN_CF_VERSION = '1.6'
-
-# CMOR tables path
-CMOR_TABLE_PATH = '/usr/local/cmip6-cmor-tables/Tables'
 
 # CIM docs creation boolean
 CREATE_CIM = 'true'
