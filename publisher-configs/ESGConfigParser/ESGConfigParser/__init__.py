@@ -294,7 +294,7 @@ class SectionParser(ConfigParser):
         """
         if not self.has_option(option):
             raise NoConfigOption(option)
-        if option.rsplit('_options')[0] in ['experiment', 'experiment_id']:
+        if option.rsplit('_options')[0] == 'experiment':
             options = self.get_options_from_table(option, field_id=2)
         else:
             options = split_line(self.get(option), sep=',')
