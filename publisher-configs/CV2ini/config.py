@@ -41,7 +41,7 @@ HANDLER = 'esgcet.config.cmip6_handler:CMIP6Handler'
 MIP_ERA = 'CMIP6'
 
 # Oldest CMOR version allowed
-MIN_CMOR_VERSION = '3.3.0'
+MIN_CMOR_VERSION = '3.2.4'
 
 # Oldest Data Specs version allowed
 
