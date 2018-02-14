@@ -40,6 +40,11 @@ HANDLER = 'esgcet.config.cmip6_handler:CMIP6Handler'
 # Oldest CMOR version allowed
 MIN_CMOR_VERSION = '3.2.4'
 
+# Oldest Data Specs version allowed
+
+MIN_DS_VERSION
+
+
 # Oldest CF version allowed
 MIN_CF_VERSION = '1.6'
 

@@ -222,7 +222,8 @@ if __name__ == "__main__":
     config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
-    config.set('min_cf_version', MIN_CF_VERSION)
+    config.set('min_data_specs_version', MIN_CF_VERSION)
+    config.set('min_cf_version', MIN_DS_VERSION)
     config.set('create_cim', CREATE_CIM)
     for att, delimiter in ATTRIBUTE_DELIMITERS.iteritems():
         config.set('{}_delimiter'.format(att), delimiter)
