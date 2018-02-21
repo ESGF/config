@@ -131,6 +131,7 @@ def get_categories(facets):
         categories.append((facet, 'string', 'false', 'true', str(i)))
         i += 1
     categories.append(('experiment_description', 'string', 'false', 'true', '17'))
+    categories.append(('model_cohort', 'string', 'true', 'true', '18'))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
@@ -202,6 +203,16 @@ if __name__ == "__main__":
                             [build_line(institute, length=lengths(institutes), indent=True) for institute in
                              sorted(institutes)])
                         config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
+                    elif facet == 'model_cohort':
+                        content = get_json_content('source_id', auth=auth, devel=args.devel)
+                        header = 'map(source_id : model_cohort)'
+                        model_cohort = []
+                        for model in content.keys():
+                            model_cohort.append((model, content[model]['cohort'][0]))
+                        model_cohort = tuple(
+                            [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
+                        config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
+
         rank += 1
     # Add frequency options
     content = get_json_content('frequency', auth=auth, devel=args.devel)
@@ -218,16 +229,6 @@ if __name__ == "__main__":
     las_frequencies = tuple(
         [build_line(frequency, length=lengths(las_frequencies), indent=True) for frequency in sorted(las_frequencies)])
     config.set('las_time_delta_map', build_line((header,) + las_frequencies, sep='\n'))
-    # Add model_cohort_map
-    declare_map(config, 'model_cohort')
-    header = 'map(source_id : model_cohort)'
-    content = get_json_content('source_id', auth=auth, devel=args.devel)
-    model_cohort = []
-    for model in content.keys():
-        model_cohort.append((model, content[model]['cohort'][0]))
-    model_cohort = tuple(
-        [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
-    config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
     config.set('min_cf_version', MIN_CF_VERSION)
