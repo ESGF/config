@@ -123,7 +123,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['institution_id', 'variable_id', 'variant_label']:
+        if facet in ['institution_id', 'variable_id', 'member_id']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -131,7 +131,9 @@ def get_categories(facets):
         categories.append((facet, 'string', 'false', 'true', str(i)))
         i += 1
     categories.append(('experiment_description', 'string', 'false', 'true', '17'))
-    categories.append(('model_cohort', 'string', 'true', 'true', '18'))
+    categories.append(('variant_label', 'string', 'true', 'true', '18'))
+    categories.append(('sub_experiment_id', 'enum', 'true', 'true', '19'))
+    categories.append(('model_cohort', 'string', 'true', 'true', '20'))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')

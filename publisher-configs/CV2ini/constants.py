@@ -15,7 +15,8 @@ IGNORED_FACETS = ['root', 'period_start', 'period_end']
 FACET_MAP = {}
 
 # Facet patterns
-FACET_PATTERNS = {'variant_label': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
+FACET_PATTERNS = {'member_id': '[%(sub_experiment_id)s-]%(variant_label)s',
+                  'variant_label': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
                   'variable_id': '%(string)s',
                   'version': 'v%(digit)s'}
 
