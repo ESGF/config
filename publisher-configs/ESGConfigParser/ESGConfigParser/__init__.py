@@ -197,7 +197,7 @@ class SectionParser(ConfigParser):
         :returns: The corresponding ``re`` pattern
 
         """
-        if option not in self.options():
+        if not self.has_option(option):
             raise NoConfigOption(option)
         pattern = self.get(option, raw=True).strip()
         # Start translation
@@ -208,12 +208,13 @@ class SectionParser(ConfigParser):
         pattern = re.sub(re.compile(r'\[(.*)\]'), r'(\1)?', pattern)
         # Remove underscore from latest mandatory pattern to allow optional brackets
         pattern = re.sub(re.compile(r'%\(([^()]*)\)s\('), r'(?P<\1>[^-_]+)(', pattern)
+        # Translate all patterns matching %(digit)s
+        pattern = re.sub(re.compile(r'%\((digit)\)s'), r'[\d]+', pattern)
+        # Translate all patterns matching %(string)s
+        pattern = re.sub(re.compile(r'%\((string)\)s'), r'[\w]+', pattern)
         # Translate %(root)s variable if exists but not required. Can include the project name.
         if re.compile(r'%\((root)\)s').search(pattern):
             pattern = re.sub(re.compile(r'%\((root)\)s'), r'(?P<\1>[\w./-]+)', pattern)
-        # Include specific facet patterns
-        for facet, facet_regex in self.get_patterns().items():
-            pattern = re.sub(re.compile(r'%\(({})\)s'.format(facet)), facet_regex.pattern, pattern)
         # Constraint on %(version)s number
         pattern = re.sub(re.compile(r'%\((version)\)s'), r'(?P<\1>v[\d]+|latest)', pattern)
         # Translate all patterns matching %(name)s
@@ -247,17 +248,19 @@ class SectionParser(ConfigParser):
 
         """
         for key in pairs.keys():
-            options, option = self.get_options(key)
-            try:
-                # get_options returned a list
-                if pairs[key] not in options:
-                    raise NoConfigValue(pairs[key], option)
-            except TypeError:
-                # get_options returned a regex from pattern
-                if not options.match(pairs[key]):
-                    raise NoConfigValue(pairs[key], option)
-                else:
-                    self.check_options(options.match(pairs[key]).groupdict())
+            # Do the check only if value exists (i.e.,not None)
+            if pairs[key]:
+                options, option = self.get_options(key)
+                try:
+                    # get_options returned a list
+                    if pairs[key] not in options:
+                        raise NoConfigValue(pairs[key], option)
+                except TypeError:
+                    # get_options returned a regex from pattern
+                    if not options.match(pairs[key]):
+                        raise NoConfigValue(pairs[key], option)
+                    else:
+                        self.check_options(options.match(pairs[key]).groupdict())
 
     def get_options(self, option):
         """
@@ -413,30 +416,7 @@ class SectionParser(ConfigParser):
         :raises Error: If the option does not exist
 
         """
-        if not self.has_option(option):
-            raise NoConfigOption(option)
-        pattern = self.get(option, raw=True)
-        # Translate all patterns matching %(digit)s
-        pattern = re.sub(re.compile(r'%\((digit)\)s'), r'[\d]+', pattern)
-        # Translate all patterns matching %(string)s
-        pattern = re.sub(re.compile(r'%\((string)\)s'), r'[\w]+', pattern)
-        # Translate all patterns matching %(facet)s
-        pattern = re.sub(re.compile(r'%\(([^()]*)\)s'), r'(?P<\1>[\w.-]+)', pattern)
-        return re.compile(pattern)
-
-    def get_patterns(self):
-        """
-        Get all ``key_patterns`` options declared into the project section.
-
-        :returns: A dictionary of {option: pattern}
-        :rtype: *dict*
-
-        """
-        patterns = dict()
-        for option in self.options(defaults=False):
-            if '_pattern' in option and option != 'version_pattern':
-                patterns[option] = self.get_options_from_pattern(option)
-        return patterns
+        return re.compile(self.translate(option, filename_pattern=False))
 
 
 def interpolate(rawval, variables):

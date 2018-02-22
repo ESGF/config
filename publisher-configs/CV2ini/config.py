@@ -18,7 +18,9 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'source_type',
                      'grid',
                      'creation_date',
-                     'branch_method']  # : indicates that the GA is mapped to  a facet
+                     'branch_method',
+                     'variant_label',
+                     'sub_experiment_id']  # : indicates that the GA is mapped to  a facet
 
 
 # netCDF variable to exclude from THREDDS

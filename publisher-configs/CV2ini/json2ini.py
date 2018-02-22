@@ -128,11 +128,12 @@ def get_categories(facets):
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
     for facet in EXTRACT_GLOBAL_NC:
-        categories.append((facet, 'string', 'false', 'true', str(i)))
+        facet_type = 'string'
+        if facet in ['sub_experiment_id']:
+            facet_type = 'enum'
+        categories.append((facet, facet_type, 'false', 'true', str(i)))
         i += 1
-    categories.append(('experiment_description', 'string', 'false', 'true', '17'))
-    categories.append(('variant_label', 'string', 'true', 'true', '18'))
-    categories.append(('sub_experiment_id', 'enum', 'true', 'true', '19'))
+    categories.append(('experiment_description', 'string', 'false', 'true', '19'))
     categories.append(('model_cohort', 'string', 'true', 'true', '20'))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
@@ -216,10 +217,17 @@ if __name__ == "__main__":
                         config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
 
         rank += 1
+    # Add sub_experiment_id options
+    content = get_json_content('sub_experiment_id', auth=auth, devel=args.devel)
+    values = content.keys()
+    config.set('{}_options'.format('sub_experiment_id'), build_line(tuple(sorted(values)), sep=', '))
+    # Add variant_label pattern
+    config.set('{}_pattern'.format('variant_label'), FACET_PATTERNS['variant_label'])
     # Add frequency options
     content = get_json_content('frequency', auth=auth, devel=args.devel)
     values = content.keys()
     config.set('{}_options'.format('frequency'), build_line(tuple(sorted(values)), sep=', '))
+    # Add version pattern
     config.set('{}_pattern'.format('version'), FACET_PATTERNS['version'])
     # Add las_time_delta_map
     declare_map(config, 'las_time_delta')
