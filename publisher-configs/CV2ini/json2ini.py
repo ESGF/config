@@ -135,7 +135,7 @@ def get_categories(facets):
         i += 1
     categories.append(('experiment_title', 'string', 'false', 'true', str(i)))
     categories.append(('model_cohort', 'string', 'true', 'true', str(i+1)))
-    categories.append(('project', 'string', 'false', 'true', str(i+2)))
+    categories.append(('project', 'enum', 'false', 'true', str(i+2)))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
@@ -171,6 +171,7 @@ if __name__ == "__main__":
         facet, facet_type, mandatory, _, _ = categories[rank]
         if strtobool(mandatory):
             if facet_type == 'enum':
+
                 content = get_json_content(facet, auth=auth, devel=args.devel)
 
                 if facet == 'experiment_id':
@@ -217,7 +218,8 @@ if __name__ == "__main__":
                         model_cohort = tuple(
                             [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
                         config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
-
+        elif facet == 'project':
+            config.set('project_options', 'CMIP6')
         rank += 1
     # Add sub_experiment_id options
     content = get_json_content('sub_experiment_id', auth=auth, devel=args.devel)
