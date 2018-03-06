@@ -12,7 +12,7 @@ JSON_FILE = 'CMIP6_{}.json'
 IGNORED_FACETS = ['root', 'period_start', 'period_end']
 
 # Facet mapping between INI and JSON attributes (if necessary)
-FACET_MAP = {}
+FACET_MAP = {'activity_drs': 'activity_id'}
 
 # Facet patterns
 FACET_PATTERNS = {'member_id': '[%(sub_experiment_id)s-]%(variant_label)s',

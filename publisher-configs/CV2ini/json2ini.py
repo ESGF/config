@@ -133,8 +133,9 @@ def get_categories(facets):
             facet_type = 'enum'
         categories.append((facet, facet_type, 'false', 'true', str(i)))
         i += 1
-    categories.append(('experiment_description', 'string', 'false', 'true', '19'))
-    categories.append(('model_cohort', 'string', 'true', 'true', '20'))
+    categories.append(('experiment_title', 'string', 'false', 'true', str(i)))
+    categories.append(('model_cohort', 'string', 'true', 'true', str(i+1)))
+    categories.append(('project', 'enum', 'false', 'true', str(i+2)))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
@@ -170,24 +171,26 @@ if __name__ == "__main__":
         facet, facet_type, mandatory, _, _ = categories[rank]
         if strtobool(mandatory):
             if facet_type == 'enum':
+
                 content = get_json_content(facet, auth=auth, devel=args.devel)
-                if facet == 'source_id':
-                    values = content.keys()
-                    config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
-                elif facet == 'experiment_id':
+
+                if facet == 'experiment_id':
                     # experiment_id_options
                     values = content.keys()
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
                     # experiment_description_map
-                    declare_map(config, 'experiment_description')
-                    header = 'map({} : experiment_description)'.format(facet)
+                    declare_map(config, 'experiment_title')
+                    header = 'map({} : experiment_title)'.format(facet)
                     descriptions = []
                     for k in sorted(content.keys()):
-                        descriptions.append((k, content[k]['description'].replace('%', 'percent')))
+                        descriptions.append((k, content[k]['experiment'].replace('%', 'percent')))
                     descriptions = tuple(
                         [build_line(description, length=lengths(descriptions), indent=True) for description in
                          sorted(descriptions)])
-                    config.set('experiment_description_map', build_line((header,) + descriptions, sep='\n'))
+                    config.set('experiment_title_map', build_line((header,) + descriptions, sep='\n'))
+                elif facet == 'activity_id':
+                    values = content.keys()
+                    config.set('activity_drs_options', build_line(tuple(sorted(values)), sep=', '))                   
                 else:
                     values = content
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
@@ -215,7 +218,8 @@ if __name__ == "__main__":
                         model_cohort = tuple(
                             [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
                         config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
-
+        elif facet == 'project':
+            config.set('project_options', 'CMIP6')
         rank += 1
     # Add sub_experiment_id options
     content = get_json_content('sub_experiment_id', auth=auth, devel=args.devel)
@@ -279,3 +283,4 @@ if __name__ == "__main__":
     with open('{}/esgcet_models_table.txt'.format(args.outdir), 'w') as table_file:
         table_file.write('\n'.join(help))
         table_file.write('\n'.join(lines))
+

@@ -175,7 +175,6 @@ cmip5 | mri-esm1 |  | MRI-ESM1, Meteorological Research Institute
 cmip5 | noresm1 |  | NorESM1, Norwegian Climate Centre (NorClim)
 cmip5 | pcmdi-test |  | PCMDI
 cmip6 | ACCESS-1-0 |  | CSIRO-BOM, Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia
-cmip6 | ACCESS-1-0 |  | CSIRO-BOM, Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia
 cmip6 | AWI-CM-1-0-HR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-CM-1-0-HR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-CM-1-0-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
@@ -189,7 +188,7 @@ cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Pau
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
-cmip6 | CAMS_CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
+cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CAMS_CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CIESM |  | THU, Department of Earth System Science, Tsinghua University, Beijing 100084, China
 cmip6 | CIESM |  | THU, Department of Earth System Science, Tsinghua University, Beijing 100084, China
@@ -271,6 +270,7 @@ cmip6 | INM-CM5-H |  | INM, Institute for Numerical Mathematics, Russian Academy
 cmip6 | INM-CM5-H |  | INM, Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
+cmip6 | KIOST-ESM |  | KIOST, Korea Institute of Ocean Science & Technology, Busan 49111, Republic of Korea
 cmip6 | MIROC-ES2H |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
 cmip6 | MIROC-ES2H |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
 cmip6 | MIROC-ES2L |  | MIROC, JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan), AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan), NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan), and AICS (RIKEN Advanced Institute for Computational Science, Hyogo 650-0047, Japan)
