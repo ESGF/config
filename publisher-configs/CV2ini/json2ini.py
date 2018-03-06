@@ -183,7 +183,7 @@ if __name__ == "__main__":
                     header = 'map({} : experiment_title)'.format(facet)
                     descriptions = []
                     for k in sorted(content.keys()):
-                        descriptions.append((k, content[k]['description'].replace('%', 'percent')))
+                        descriptions.append((k, content[k]['experiment'].replace('%', 'percent')))
                     descriptions = tuple(
                         [build_line(description, length=lengths(descriptions), indent=True) for description in
                          sorted(descriptions)])
