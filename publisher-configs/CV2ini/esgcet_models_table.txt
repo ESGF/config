@@ -190,6 +190,7 @@ cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CAMS_CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
+cmip6 | CAS-ESM1-0 |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
 cmip6 | CIESM |  | THU, Department of Earth System Science, Tsinghua University, Beijing 100084, China
 cmip6 | CIESM |  | THU, Department of Earth System Science, Tsinghua University, Beijing 100084, China
 cmip6 | CMCC-CM2-HR4 |  | CMCC, Fondazione Centro Euro-Mediterraneo sui Cambiamenti Climatici, Lecce 73100, Italy
