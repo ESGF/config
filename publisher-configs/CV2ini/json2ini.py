@@ -135,7 +135,7 @@ def get_categories(facets):
         i += 1
     categories.append(('experiment_title', 'string', 'false', 'true', str(i)))
     categories.append(('model_cohort', 'string', 'true', 'true', str(i+1)))
-    categories.append(('project', 'enum', 'false', 'true', str(i+2)))
+    categories.append(('project', 'string', 'false', 'true', str(i+2)))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
