@@ -211,7 +211,7 @@ class SectionParser(ConfigParser):
         # Translate all patterns matching %(digit)s
         pattern = re.sub(re.compile(r'%\((digit)\)s'), r'[\d]+', pattern)
         # Translate all patterns matching %(string)s
-        pattern = re.sub(re.compile(r'%\((string)\)s'), r'[\w]+', pattern)
+        pattern = re.sub(re.compile(r'%\((string)\)s'), r'[\w-]+', pattern)
         # Translate %(root)s variable if exists but not required. Can include the project name.
         if re.compile(r'%\((root)\)s').search(pattern):
             pattern = re.sub(re.compile(r'%\((root)\)s'), r'(?P<\1>[\w./-]+)', pattern)
@@ -258,7 +258,7 @@ class SectionParser(ConfigParser):
                 except TypeError:
                     # get_options returned a regex from pattern
                     if not options.match(pairs[key]):
-                        raise NoConfigValue(pairs[key], option)
+                        raise NoConfigValue(pairs[key], options.pattern)
                     else:
                         self.check_options(options.match(pairs[key]).groupdict())
 
