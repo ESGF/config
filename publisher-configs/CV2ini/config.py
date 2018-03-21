@@ -27,7 +27,7 @@ EXTRACT_GLOBAL_NC = ['frequency',
 
 
 # netCDF variable to exclude from THREDDS
-THREDDS_EXCLUDE_VARIABLES = ['a', 'a_bnds', 'alev1', 'alevel', 'alevhalf', 'alt40', 'b', 'b_bnds', 'basin', 'bnds',
+THREDDS_EXCLUDE_VARIABLES = ['a', 'a_bnds', 'alev1', 'alevel', 'alevhalf', 'alt40', 'b', 'b_bnds', 'bnds',
                              'bounds_lat', 'bounds_lon', 'dbze', 'depth', 'depth0m', 'depth100m', 'depth_bnds',
                              'geo_region', 'height', 'height10m', 'height2m', 'lat', 'lat_bnds', 'latitude',
                              'latitude_bnds', 'layer', 'lev', 'lev_bnds', 'location', 'lon', 'lon_bnds', 'longitude',
