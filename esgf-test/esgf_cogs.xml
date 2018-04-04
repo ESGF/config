@@ -11,6 +11,9 @@
         <!-- DOE/LLNL production server -->
         <site name="ESGF-TEST@DOE/LLNL" domain="pcmdi11.llnl.gov" />
 
+	<!-- NOAA/GFDL test server -->
+	<site name="ESGF-TEST@NOAA/GFDL" domain="esgf-test.gfdl.noaa.gov" />
+	
     <!-- Asia -->
 
     <!-- Australia -->
