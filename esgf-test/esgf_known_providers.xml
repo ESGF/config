@@ -47,6 +47,11 @@ to confirm their username along with their password.
   <URL>https://pcmdi11.llnl.gov/esgf-idp/openid</URL>
  </OP>
 
+ <OP>
+  <NAME>Geophysical Fluid Dynamics Lab (GFDL - TEST)</NAME>
+  <URL>https://esgf-node.gfdl.noaa.gov/esgf-idp/openid</URL>
+ </OP>
+	
  <!-- Asia -->
 
  <!-- Australia -->
