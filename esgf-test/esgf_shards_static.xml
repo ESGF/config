@@ -14,7 +14,8 @@ custom configuration of replica nodes.
 
     <!-- America -->
     <value>pcmdi11.llnl.gov/solr</value>
-
+    <value>esgf-node.gfdl.noaa.gov/solr</value>
+    
     <!-- Asia -->
 
     <!-- Australia -->
