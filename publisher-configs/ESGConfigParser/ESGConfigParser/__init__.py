@@ -189,7 +189,7 @@ class SectionParser(ConfigParser):
             del opts['__name__']
         return opts.keys()
 
-    def translate(self, option, filename_pattern=False):
+    def translate(self, option, filename_pattern=False, version_pattern=True, sep='/'):
         """
         Return a regular expression associated with a ``pattern_format`` option
         in the configuration file. This can be passed to the Python ``re`` methods.
@@ -219,10 +219,14 @@ class SectionParser(ConfigParser):
         pattern = re.sub(re.compile(r'%\((version)\)s'), r'(?P<\1>v[\d]+|latest)', pattern)
         # Translate all patterns matching %(name)s
         pattern = re.sub(re.compile(r'%\(([^()]*)\)s'), r'(?P<\1>[\w.-]+)', pattern)
-        if filename_pattern:
-            return '{}/(?P<filename>[\w.-]+)$'.format(pattern)
-        else:
-            return '{}$'.format(pattern)
+        # Add ending version pattern if needed and missing
+        if version_pattern and 'version' not in pattern:
+            pattern = '{}{}(?P<version>v[\d]+|latest)$'.format(pattern, sep)
+        # Add ending filename pattern if needed and missing
+        if filename_pattern and 'filename' not in pattern:
+            pattern = '{}{}(?P<filename>[\w.-]+)$'.format(pattern, sep)
+        return pattern
+
 
     def get_facets(self, option, ignored=None):
         """
@@ -416,7 +420,7 @@ class SectionParser(ConfigParser):
         :raises Error: If the option does not exist
 
         """
-        return re.compile(self.translate(option, filename_pattern=False))
+        return re.compile(self.translate(option, filename_pattern=False, version_pattern=False))
 
 
 def interpolate(rawval, variables):
