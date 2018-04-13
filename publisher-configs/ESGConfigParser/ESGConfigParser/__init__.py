@@ -227,7 +227,6 @@ class SectionParser(ConfigParser):
             pattern = '{}{}(?P<filename>[\w.-]+)$'.format(pattern, sep)
         return pattern
 
-
     def get_facets(self, option, ignored=None):
         """
         Returns the set of facets declared into "*_format" attributes in the configuration file.
@@ -285,6 +284,8 @@ class SectionParser(ConfigParser):
         elif self.has_option('{}_pattern'.format(option)):
             option = '{}_pattern'.format(option)
             return self.get_options_from_pattern(option), option
+        elif self.has_option('category_defaults'):
+            return self.get_option_from_pairs('category_defaults', option), 'category_defaults'
         else:
             raise NoConfigOptions(option)
 
@@ -301,7 +302,7 @@ class SectionParser(ConfigParser):
         """
         if not self.has_option(option):
             raise NoConfigOption(option)
-        if option.rsplit('_options')[0] == 'experiment':
+        if option.rsplit('_options')[0] == ['experiment', 'project']:
             options = self.get_options_from_table(option, field_id=2)
         else:
             options = split_line(self.get(option), sep=',')
@@ -334,7 +335,7 @@ class SectionParser(ConfigParser):
             raise MisdeclaredOption(option)
         return options
 
-    def get_options_from_pairs(self, option, key):
+    def get_option_from_pairs(self, option, key):
         """
         Returns the list of option values from pairs table (i.e., <key> | <value>).
 
