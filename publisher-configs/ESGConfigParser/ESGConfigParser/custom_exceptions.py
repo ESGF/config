@@ -186,7 +186,7 @@ class MissingPatternKey(ConfigException):
     """
 
     def __init__(self, keys, pattern):
-        self.msg = 'Missing facet key(s) for pattern resolution (try to use "--not-ignored" argument)'
+        self.msg = 'Missing facet key(s) for pattern resolution'
         self.msg += "\n<found keys: '{}'>".format(keys)
         self.msg += "\n<pattern: '{}'>".format(pattern)
         super(self.__class__, self).__init__(self.msg)
