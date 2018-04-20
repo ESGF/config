@@ -423,7 +423,7 @@ class SectionParser(ConfigParser):
         :raises Error: If the option does not exist
 
         """
-        return re.compile(self.translate(option, filename_pattern=False, version_pattern=False))
+        return re.compile(self.translate(option))
 
 
 def interpolate(rawval, variables):
