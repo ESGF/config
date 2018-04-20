@@ -189,7 +189,7 @@ class SectionParser(ConfigParser):
             del opts['__name__']
         return opts.keys()
 
-    def translate(self, option, filename_pattern=False, version_pattern=True, sep='/'):
+    def translate(self, option, add_ending_filename=False, add_ending_version=False, sep='/'):
         """
         Return a regular expression associated with a ``pattern_format`` option
         in the configuration file. This can be passed to the Python ``re`` methods.
@@ -197,6 +197,8 @@ class SectionParser(ConfigParser):
         :returns: The corresponding ``re`` pattern
 
         """
+        # Default is to translate the pattern string as it
+        # Without forcing ending version or filename
         if not self.has_option(option):
             raise NoConfigOption(option)
         pattern = self.get(option, raw=True).strip()
@@ -220,10 +222,10 @@ class SectionParser(ConfigParser):
         # Translate all patterns matching %(name)s
         pattern = re.sub(re.compile(r'%\(([^()]*)\)s'), r'(?P<\1>[\w.-]+)', pattern)
         # Add ending version pattern if needed and missing
-        if version_pattern and 'version' not in pattern:
+        if add_ending_version and 'version' not in pattern:
             pattern = '{}{}(?P<version>v[\d]+|latest)$'.format(pattern, sep)
         # Add ending filename pattern if needed and missing
-        if filename_pattern and 'filename' not in pattern:
+        if add_ending_filename and 'filename' not in pattern:
             pattern = '{}{}(?P<filename>[\w.-]+)$'.format(pattern, sep)
         return pattern
 
