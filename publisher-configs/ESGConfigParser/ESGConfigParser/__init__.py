@@ -304,7 +304,7 @@ class SectionParser(ConfigParser):
         """
         if not self.has_option(option):
             raise NoConfigOption(option)
-        if option.rsplit('_options')[0] == ['experiment', 'project']:
+        if option in ['experiment_options', 'project_options']:
             options = self.get_options_from_table(option, field_id=2)
         else:
             options = split_line(self.get(option), sep=',')
