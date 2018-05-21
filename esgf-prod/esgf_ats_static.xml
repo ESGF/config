@@ -28,6 +28,14 @@ by the node manager.
         description="Users of CMIP5 data for commercial purposes"
         registrationService="https://esgf-node.llnl.gov/esgf-idp/secure/registrationService.htm"
     />
+
+    <!-- LLNL CMIP6 -->
+    <attribute 
+	type="CMIP6-Restricted" 
+	attributeService="https://esgf-node.llnl.gov/esgf-idp/saml/soap/secure/attributeService.htm" 
+	description=”CMIP6 data download preview" 
+	registrationService="https://esgf-node.llnl.gov/esgf-idp/secure/registrationService.htm" 
+    />
                
     <!-- NASA Obs4MIPs -->
     <attribute
