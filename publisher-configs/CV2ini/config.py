@@ -23,7 +23,7 @@ EXTRACT_GLOBAL_NC = ['frequency',
                      'sub_experiment_id',
                      'further_info_url',
                      'activity_id',
-                     'data_specs_version']  # : indicates that the GA is mapped to  a facet
+                     'data_specs_version']
 
 
 # netCDF variable to exclude from THREDDS
