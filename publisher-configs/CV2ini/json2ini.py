@@ -123,7 +123,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['institution_id', 'variable_id', 'member_id']:
+        if facet in ['variable_id', 'member_id']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -171,9 +171,7 @@ if __name__ == "__main__":
         facet, facet_type, mandatory, _, _ = categories[rank]
         if strtobool(mandatory):
             if facet_type == 'enum':
-
                 content = get_json_content(facet, auth=auth, devel=args.devel)
-
                 if facet == 'experiment_id':
                     # experiment_id_options
                     values = content.keys()
@@ -199,17 +197,17 @@ if __name__ == "__main__":
                     config.set('{}_pattern'.format(facet), FACET_PATTERNS[facet])
                 except KeyError:
                     declare_map(config, facet)
-                    if facet == 'institution_id':
-                        content = get_json_content('source_id', auth=auth, devel=args.devel)
-                        header = 'map(source_id : {})'.format(facet)
-                        institutes = []
-                        for model in content.keys():
-                            institutes.append((model, content[model]['institution_id'][0]))
-                        institutes = tuple(
-                            [build_line(institute, length=lengths(institutes), indent=True) for institute in
-                             sorted(institutes)])
-                        config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
-                    elif facet == 'model_cohort':
+                    # if facet == 'institution_id':
+                    #     content = get_json_content('source_id', auth=auth, devel=args.devel)
+                    #     header = 'map(source_id : {})'.format(facet)
+                    #     institutes = []
+                    #     for model in content.keys():
+                    #         institutes.append((model, content[model]['institution_id'][0]))
+                    #     institutes = tuple(
+                    #         [build_line(institute, length=lengths(institutes), indent=True) for institute in
+                    #          sorted(institutes)])
+                    #     config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
+                    if facet == 'model_cohort':
                         content = get_json_content('source_id', auth=auth, devel=args.devel)
                         header = 'map(source_id : model_cohort)'
                         model_cohort = []
