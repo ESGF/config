@@ -12,33 +12,35 @@ JSON_FILE = 'CMIP6_{}.json'
 IGNORED_FACETS = ['root', 'period_start', 'period_end']
 
 # Facet mapping between INI and JSON attributes (if necessary)
-FACET_MAP = {'activity': 'activity_id',
-             'institute': 'source_id',
-             'model': 'source_id',
-             'experiment': 'experiment_id',
-             'cmor_table': 'table_id',
-             'time_frequency': 'frequency'}
+FACET_MAP = {'activity_drs': 'activity_id'}
 
 # Facet patterns
-FACET_PATTERNS = {'ensemble': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
-                  'variable': '%(string)s',
+FACET_PATTERNS = {'member_id': '[%(sub_experiment_id)s-]%(variant_label)s',
+                  'variant_label': 'r%(digit)si%(digit)sp%(digit)sf%(digit)s',
+                  'variable_id': '%(string)s',
                   'version': 'v%(digit)s'}
 
 # LAS time frequencies
 LAS_FREQUENCIES = {'1hr': '1 hour',
-                   '1hrClimMon': '1 hour',
+                   '1hrCM': '1 hour',
+                   '1hrPt': '1 hour',
                    '3hr': '3 hours',
+                   '3hrPt': '3 hours',
                    '6hr': '6 hours',
+                   '6hrPt': '6 hours',
                    'day': '1 day',
                    'MonDay': 'Monthly(Day)',
                    'dec': '10 years',
                    'fx': 'fixed',
                    'mon': '1 month',
-                   'monClim': '1 month',
+                   'monC': '1 month',
+                   'monPt': '1 month',
                    'MonNight': 'Monthly(Nigh)',
                    'sem': 'seasonal mean',
                    'subhr': '1 minute',
-                   'yr': '1 year'}
+                   'subhrPt': '1 minute',
+                   'yr': '1 year',
+                   'yrPt': '1 year'}
 
 # Help
 PROGRAM_DESC = \
@@ -52,7 +54,7 @@ PROGRAM_DESC = \
 EPILOG = \
     """
     Developed by:\n
-    Ames, S. (LLNL - ames4@llnl.gov)\n
+    Ames, S. (DOE/LLNL - ames4@llnl.gov)\n
     Levavasseur, G. (UPMC/IPSL - glipsl@ipsl.fr)\n
 
     """

@@ -95,17 +95,6 @@ def get_json_content(facet, auth=None, devel=False):
     return requests.get(r.json()['download_url'], auth=auth).json()[WCRP_facet]
 
 
-def authenticate(self):
-    """
-    Build GitHub HTTP authenticator
-
-    :returns: The HTTP authenticator
-    :rtype: *requests.auth.HTTPBasicAuth*
-
-    """
-    return HTTPBasicAuth(self.gh_user, self.gh_password) if self.gh_user and self.gh_password else None
-
-
 def find_facets(facets, format):
     for i, v in enumerate(re.findall(re.compile(r'%\(([^()]*)\)s'), format)):
         try:
@@ -134,12 +123,19 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable', 'version', 'ensemble', 'institute']:
+        if facet in ['institution_id', 'variable_id', 'member_id']:
             facet_type = 'string'
-        categories.append((facet, facet_type, 'true', 'true', str(i)))
+        if facet not in ['version']:
+            categories.append((facet, facet_type, 'true', 'true', str(i)))
     for facet in EXTRACT_GLOBAL_NC:
-        categories.append((facet, 'string', 'false', 'true', str(i)))
+        facet_type = 'string'
+        if facet in ['sub_experiment_id']:
+            facet_type = 'enum'
+        categories.append((facet, facet_type, 'false', 'true', str(i)))
         i += 1
+    categories.append(('experiment_title', 'string', 'false', 'true', str(i)))
+    categories.append(('model_cohort', 'string', 'true', 'true', str(i+1)))
+    categories.append(('project', 'string', 'false', 'true', str(i+2)))
     categories.append(('description', 'text', 'false', 'false', '99'))
     categories = tuple([build_line(category, length=lengths(categories), indent=True) for category in categories])
     return build_line(categories, sep='\n')
@@ -160,7 +156,7 @@ if __name__ == "__main__":
     # Get all facet keys from format elements
     facets = get_facets()
     config.set('categories', get_categories(facets), newline=True)
-    defaults = [('project', 'CMIP6'), ('mip_era', 'CMIP6')]
+    defaults = [('project', 'CMIP6')]
     defaults = tuple(
         [build_line(default, length=lengths(defaults), indent=True) for default in sorted(defaults)])
     config.set('category_defaults', build_line(defaults, sep='\n'), newline=True)
@@ -168,24 +164,33 @@ if __name__ == "__main__":
     config.set('directory_format', DIRECTORY_FORMAT)
     config.set('dataset_id', DATASET_ID)
     config.set('dataset_name_format', DATASET_FORMAT)
+    config.set('mip_era_options', MIP_ERA)
     categories = config.get_options_from_table('categories')
     rank = 1
     while rank in map(int, zip(*categories)[4]):
         facet, facet_type, mandatory, _, _ = categories[rank]
         if strtobool(mandatory):
             if facet_type == 'enum':
+
                 content = get_json_content(facet, auth=auth, devel=args.devel)
-                if facet == 'model':
+
+                if facet == 'experiment_id':
+                    # experiment_id_options
                     values = content.keys()
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
-                elif facet == 'experiment':
-                    values = []
-                    length = lengths([(args.project.lower(), k) for k in content.keys()])
-                    for k in content.keys():
-                        values.append('    {} | {} | {}'.format(format(args.project, str(length[0])),
-                                                                format(k, str(length[1])),
-                                                                content[k]['description'].replace('%', 'percent')))
-                    config.set('{}_options'.format(facet), build_line(tuple(values), sep='\n'), newline=True)
+                    # experiment_description_map
+                    declare_map(config, 'experiment_title')
+                    header = 'map({} : experiment_title)'.format(facet)
+                    descriptions = []
+                    for k in sorted(content.keys()):
+                        descriptions.append((k, content[k]['experiment'].replace('%', 'percent')))
+                    descriptions = tuple(
+                        [build_line(description, length=lengths(descriptions), indent=True) for description in
+                         sorted(descriptions)])
+                    config.set('experiment_title_map', build_line((header,) + descriptions, sep='\n'))
+                elif facet == 'activity_id':
+                    values = content.keys()
+                    config.set('activity_drs_options', build_line(tuple(sorted(values)), sep=', '))                   
                 else:
                     values = content
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
@@ -193,10 +198,10 @@ if __name__ == "__main__":
                 try:
                     config.set('{}_pattern'.format(facet), FACET_PATTERNS[facet])
                 except KeyError:
-                    content = get_json_content(facet, auth=auth, devel=args.devel)
                     declare_map(config, facet)
-                    if facet == 'institute':
-                        header = 'map(model : {})'.format(facet)
+                    if facet == 'institution_id':
+                        content = get_json_content('source_id', auth=auth, devel=args.devel)
+                        header = 'map(source_id : {})'.format(facet)
                         institutes = []
                         for model in content.keys():
                             institutes.append((model, content[model]['institution_id'][0]))
@@ -204,11 +209,30 @@ if __name__ == "__main__":
                             [build_line(institute, length=lengths(institutes), indent=True) for institute in
                              sorted(institutes)])
                         config.set('{}_map'.format(facet), build_line((header,) + institutes, sep='\n'))
+                    elif facet == 'model_cohort':
+                        content = get_json_content('source_id', auth=auth, devel=args.devel)
+                        header = 'map(source_id : model_cohort)'
+                        model_cohort = []
+                        for model in content.keys():
+                            model_cohort.append((model, content[model]['cohort'][0]))
+                        model_cohort = tuple(
+                            [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
+                        config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
+        elif facet == 'project':
+            config.set('project_options', 'CMIP6')
         rank += 1
+    # Add sub_experiment_id options
+    content = get_json_content('sub_experiment_id', auth=auth, devel=args.devel)
+    values = content.keys()
+    config.set('{}_options'.format('sub_experiment_id'), build_line(tuple(sorted(values)), sep=', '))
+    # Add variant_label pattern
+    config.set('{}_pattern'.format('variant_label'), FACET_PATTERNS['variant_label'])
     # Add frequency options
     content = get_json_content('frequency', auth=auth, devel=args.devel)
     values = content.keys()
     config.set('{}_options'.format('frequency'), build_line(tuple(sorted(values)), sep=', '))
+    # Add version pattern
+    config.set('{}_pattern'.format('version'), FACET_PATTERNS['version'])
     # Add las_time_delta_map
     declare_map(config, 'las_time_delta')
     header = 'map(frequency : las_time_delta)'
@@ -219,25 +243,14 @@ if __name__ == "__main__":
     las_frequencies = tuple(
         [build_line(frequency, length=lengths(las_frequencies), indent=True) for frequency in sorted(las_frequencies)])
     config.set('las_time_delta_map', build_line((header,) + las_frequencies, sep='\n'))
-    # Add model_cohort_map
-    declare_map(config, 'model_cohort')
-    header = 'map(source_id : model_cohort)'
-    content = get_json_content('source_id', auth=auth, devel=args.devel)
-    model_cohort = []
-    for model in content.keys():
-        model_cohort.append((model, content[model]['cohort'][0]))
-    model_cohort = tuple(
-        [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
-    config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
     config.set('handler', HANDLER)
     config.set('min_cmor_version', MIN_CMOR_VERSION)
     config.set('min_cf_version', MIN_CF_VERSION)
+    config.set('min_data_specs_version', MIN_DS_VERSION)
+    config.set('create_cim', CREATE_CIM)
     for att, delimiter in ATTRIBUTE_DELIMITERS.iteritems():
         config.set('{}_delimiter'.format(att), delimiter)
-    config.set('cmor_table_path', CMOR_TABLE_PATH)
-    config.set('CREATE_CIM', CREATE_CIM)
     config.set('las_configure', LAS_CONFIGURE)
-    config.set('cmor_table_path', CMOR_TABLE_PATH)
     config.set('extract_global_attrs', build_line(tuple(EXTRACT_GLOBAL_NC), sep=', '))
     config.set('thredds_exclude_variables', build_line(tuple(THREDDS_EXCLUDE_VARIABLES), sep=', '))
     config.set('variable_locate', build_line(('ps', 'ps_'), sep=', '))
@@ -270,3 +283,4 @@ if __name__ == "__main__":
     with open('{}/esgcet_models_table.txt'.format(args.outdir), 'w') as table_file:
         table_file.write('\n'.join(help))
         table_file.write('\n'.join(lines))
+
