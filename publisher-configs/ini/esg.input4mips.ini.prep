@@ -47,14 +47,14 @@ directory_format = %(root)s/%(activity_id)s/%(mip_era)s/%(target_mip)s/%(institu
 
 #  Add pattern for missing facets:  not project or version 
 
-#institution_id_pattern = %(string)s
-#frequency_pattern = %(string)s
-#source_id_pattern = %(string)s
-#grid_label_pattern = %(string)s
-#variable_id_pattern = %(string)s
-#target_mip_pattern = %(string)s
-#dataset_category_pattern = %(string)s
-#realm_pattern = %(string)s
+institution_id_pattern = %(string)s
+frequency_pattern = %(string)s
+source_id_pattern = %(string)s
+grid_label_pattern = %(string)s
+variable_id_pattern = %(string)s
+target_mip_pattern = %(string)s
+dataset_category_pattern = %(string)s
+realm_pattern = %(string)s
 
 dataset_id = %(activity_id)s.%(mip_era)s.%(target_mip)s.%(institution_id)s.%(source_id)s.%(realm)s.%(frequency)s.%(variable_id)s.%(grid_label)s
 
