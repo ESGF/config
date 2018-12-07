@@ -17,7 +17,6 @@ custom configuration of replica nodes.
     <value>esgf-node.llnl.gov/solr</value>
     <value>esgdata.gfdl.noaa.gov/solr</value>
     <value>esgf.nccs.nasa.gov/solr</value>
-    <value>esgf.esrl.noaa.gov/solr</value>
 
     <!-- Asia -->
 
