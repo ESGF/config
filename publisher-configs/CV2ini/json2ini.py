@@ -189,6 +189,8 @@ if __name__ == "__main__":
                 elif facet == 'activity_id':
                     values = content.keys()
                     config.set('activity_drs_options', build_line(tuple(sorted(values)), sep=', '))                   
+                elif facet == 'variable_id':
+                    config.set('variable_id_options', build_line(tuple(VARIABLES_ID), sep=', '))
                 else:
                     values = content
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
