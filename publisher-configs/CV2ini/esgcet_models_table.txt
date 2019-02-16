@@ -336,6 +336,7 @@ cmip6 | PCMDI-test-1-0 |  | PCMDI, Program for Climate Model Diagnosis and Inter
 cmip6 | PCMDI-test-1-0 |  | PCMDI, Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, CA 94550, USA
 cmip6 | RRTMG-LW-4-91 |  | AER, Research and Climate Group, Atmospheric and Environmental Research, 131 Hartwell Avenue, Lexington, MA 02421, USA
 cmip6 | RRTMG-SW-4-02 |  | AER, Research and Climate Group, Atmospheric and Environmental Research, 131 Hartwell Avenue, Lexington, MA 02421, USA
+cmip6 | RTE-RRTMGP-181204 |  | RTE-RRTMGP-Consortium, AER (Atmospheric and Environmental Research, Lexington, MA 02421, USA); UColorado (University of Colorado, Boulder, CO 80309, USA). Mailing address: AER c/o Eli Mlawer, 131 Hartwell Avenue, Lexington, MA 02421, USA
 cmip6 | SAM0-UNICON |  | SNU, Seoul National University, Seoul 08826, Republic of Korea
 cmip6 | SAM0-UNICON |  | SNU, Seoul National University, Seoul 08826, Republic of Korea
 cmip6 | TaiESM1 |  | AS-RCEC, Research Center for Environmental Changes, Academia Sinica, Nankang, Taipei 11529, Taiwan

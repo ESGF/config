@@ -123,7 +123,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['variable_id', 'member_id']:
+        if facet in ['member_id']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -171,7 +171,8 @@ if __name__ == "__main__":
         facet, facet_type, mandatory, _, _ = categories[rank]
         if strtobool(mandatory):
             if facet_type == 'enum':
-                content = get_json_content(facet, auth=auth, devel=args.devel)
+                if not facet == 'variable_id':
+                    content = get_json_content(facet, auth=auth, devel=args.devel)
                 if facet == 'experiment_id':
                     # experiment_id_options
                     values = content.keys()
