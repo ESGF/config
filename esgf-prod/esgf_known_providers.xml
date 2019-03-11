@@ -48,10 +48,6 @@ to confirm their username along with their password.
   <URL>https://esgf-node.llnl.gov/esgf-idp/openid/</URL>
  </OP>
  <OP>
-  <NAME>NASA Jet Propulsion Laboratory (JPL)</NAME>
-  <URL>https://esgf-node.jpl.nasa.gov/esgf-idp/openid/</URL>
- </OP>
- <OP>
   <NAME>NASA Center for Climate Simulation (NCCS)</NAME>
   <URL>https://esgf.nccs.nasa.gov/esgf-idp/openid/</URL>
  </OP>
