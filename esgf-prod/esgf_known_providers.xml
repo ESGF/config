@@ -55,10 +55,7 @@ to confirm their username along with their password.
   <NAME>NOAA Geophysical Fluid Dynamics Laboratory (GFDL)</NAME>
   <URL>https://esgdata.gfdl.noaa.gov/esgf-idp/openid/</URL>
  </OP>
- <OP>
-  <NAME>NOAA Enviromental System Research Laboratory (ESRL)</NAME>
-  <URL>https://esgf.esrl.noaa.gov/esgf-idp/openid/</URL>
- </OP>
+
 
  <!-- Asia -->
 
