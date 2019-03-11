@@ -12,10 +12,6 @@
     <!-- DOE/LLNL production server -->
     <site name="ESGF@DOE/LLNL" domain="esgf-node.llnl.gov" /> 
 
-
-        <!-- NASA/JPL production server -->
-        <site name="ESGF@NASA/JPL" domain="esgf-node.jpl.nasa.gov" />
-
         <!-- NASA/NCCS production server -->
         <site name="ESGF@NASA/NCCS" domain="esgf.nccs.nasa.gov" />
 
