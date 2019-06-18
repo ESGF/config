@@ -189,7 +189,7 @@ cmip6 | BCC-CSM2-HR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-CSM2-MR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-ESM1 |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
-cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
+cmip6 | BESM-2-9 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
@@ -313,7 +313,8 @@ cmip6 | MPI-ESM1-2-XR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 
 cmip6 | MPIESM-1-2-HR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MPIESM-1-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
 cmip6 | MPIESM-2-LR |  | MPI-M, Max Planck Institute for Meteorology, Hamburg 20146, Germany
-cmip6 | MRI-AGCM3-2 |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
+cmip6 | MRI-AGCM3-2-H |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
+cmip6 | MRI-AGCM3-2-S |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
 cmip6 | MRI-ESM2-0 |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
 cmip6 | MRI-ESM2-0 |  | MRI, Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan
 cmip6 | NESM3 |  | NUIST, Nanjing University of Information Science and Technology, Nanjing, 210044, China
