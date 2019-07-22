@@ -123,7 +123,7 @@ def get_categories(facets):
     i = 0
     for i, facet in facets:
         facet_type = 'enum'
-        if facet in ['member_id']:
+        if facet in ['member_id', 'variable_id']:
             facet_type = 'string'
         if facet not in ['version']:
             categories.append((facet, facet_type, 'true', 'true', str(i)))
@@ -189,9 +189,7 @@ if __name__ == "__main__":
                     config.set('experiment_title_map', build_line((header,) + descriptions, sep='\n'))
                 elif facet == 'activity_id':
                     values = content.keys()
-                    config.set('activity_drs_options', build_line(tuple(sorted(values)), sep=', '))                   
-                elif facet == 'variable_id':
-                    config.set('variable_id_options', build_line(tuple(VARIABLES_ID), sep=', '))
+                    config.set('activity_drs_options', build_line(tuple(sorted(values)), sep=', '))
                 else:
                     values = content
                     config.set('{}_options'.format(facet), build_line(tuple(sorted(values)), sep=', '))
