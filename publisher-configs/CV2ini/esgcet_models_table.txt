@@ -185,6 +185,7 @@ cmip6 | AWI-CM-1-1-HR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for P
 cmip6 | AWI-CM-1-1-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-CM-1-1-MR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | AWI-ESM-1-1-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
+cmip6 | AWI-ESM-2-1-LR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
 cmip6 | BCC-CSM2-HR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-CSM2-MR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-ESM1 |  | BCC, Beijing Climate Center, Beijing 100081, China
