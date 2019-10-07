@@ -274,10 +274,11 @@ cmip6 | GFDL-GRTCODE |  | NOAA-GFDL, National Oceanic and Atmospheric Administra
 cmip6 | GFDL-OM4p5B |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-RFM-DISORT |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GISS-E2-1-G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
+cmip6 | GISS-E2-1-G-CC |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
 cmip6 | GISS-E2-1-H |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
-cmip6 | GISS-E2-1-MA-G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
 cmip6 | GISS-E2-1G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
 cmip6 | GISS-E2-1H |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
+cmip6 | GISS-E2-2-G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
 cmip6 | GISS-E3-G |  | NASA-GISS, Goddard Institute for Space Studies, New York, NY 10025, USA
 cmip6 | HadGEM3-GC31-HH |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | HadGEM3-GC31-HH |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
