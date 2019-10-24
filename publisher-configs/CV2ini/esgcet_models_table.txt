@@ -175,7 +175,7 @@ cmip5 | mri-esm1 |  | MRI-ESM1, Meteorological Research Institute
 cmip5 | noresm1 |  | NorESM1, Norwegian Climate Centre (NorClim)
 cmip5 | pcmdi-test |  | PCMDI
 cmip6 | ACCESS-1-0 |  | CSIRO-BOM, Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia
-cmip6 | ACCESS-CM2 |  | CSIRO-ARCCSS-BoM, Commonwealth Scientific and Industrial Research Organisation, Australian Research Council Centre of Excellence for Climate System Science, and Bureau of Meteorology, Aspendale, Victoria 3195, Australia
+cmip6 | ACCESS-CM2 |  | CSIRO-ARCCSS, CSIRO (Commonwealth Scientific and Industrial Research Organisation, Aspendale, Victoria 3195, Australia), ARCCSS (Australian Research Council Centre of Excellence for Climate System Science)
 cmip6 | ACCESS-ESM1-5 |  | CSIRO, Commonwealth Scientific and Industrial Research Organisation, Aspendale, Victoria 3195, Australia
 cmip6 | ARTS-2-3 |  | UHH, Universitat Hamburg, Hamburg 20148, Germany
 cmip6 | AWI-CM-1-0-HR |  | AWI, Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany
