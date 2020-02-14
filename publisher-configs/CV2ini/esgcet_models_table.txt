@@ -364,6 +364,7 @@ cmip6 | UKESM1-0-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, D
 cmip6 | UKESM1-0-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-0-MMh |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-0-MMh |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
+cmip6 | UKESM1-ice-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UofT-CCSM4 |  | UofT, Department of Physics, University of Toronto, 60 St George Street, Toronto, ON M5S1A7, Canada
 cmip6 | VRESM-1-0 |  | CSIR-CSIRO, CSIR (Council for Scientific and Industrial Research - Natural Resources and the Environment, Pretoria, 0001, South Africa), CSIRO (Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia)
 cmip6 | VRESM-1-0 |  | CSIR-Wits-CSIRO, CSIR (Council for Scientific and Industrial Research - Natural Resources and the Environment, Pretoria, 0001, South Africa), Wits (University of the Witwatersrand - Global Change Institute, Johannesburg 2050, South Africa), CSIRO (Commonwealth Scientific and Industrial Research Organisation, Aspendale, Victoria 3195, Australia)Mailing address: Wits, Global Change Institute, Johannesburg 2050, South Africa
