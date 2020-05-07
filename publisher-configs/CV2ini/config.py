@@ -58,5 +58,8 @@ MIN_CF_VERSION = '1.6'
 CREATE_CIM = 'true'
 
 # LAS configuration boolean
-LAS_CONFIGURE = 'true'
+LAS_CONFIGURE = 'false'
+
+#variables for variable_locate (will append _)
+LOCATE_VARS = ['ps', 'tau']
 

@@ -194,6 +194,7 @@ cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Pau
 cmip6 | BESM-2-9 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
+cmip6 | CAM-MPAS-HR |  | PNNL-WACCEM, PNNL (Pacific Northwest National Laboratory), Richland, WA 99352, USA
 cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CAMS_CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CAS-ESM2-0 |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
@@ -302,9 +303,11 @@ cmip6 | INM-CM5-0 |  | INM, Institute for Numerical Mathematics, Russian Academy
 cmip6 | INM-CM5-0 |  | INM, Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia
 cmip6 | INM-CM5-H |  | INM, Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia
 cmip6 | INM-CM5-H |  | INM, Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia
+cmip6 | IPSL-CM5A2-INCA |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-ATM-HR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
+cmip6 | IPSL-CM6A-LR-INCA |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM7A-ATM-HR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM7A-ATM-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | KACE-1-0-G |  | NIMS-KMA, National Institute of Meteorological Sciences/Korea Meteorological Administration, Climate Research Division, Seoho-bukro 33, Seogwipo-si, Jejudo 63568, Republic of Korea
