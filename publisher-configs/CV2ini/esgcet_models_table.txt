@@ -199,6 +199,8 @@ cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beiji
 cmip6 | CAMS_CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
 cmip6 | CAS-ESM2-0 |  | CAS, Chinese Academy of Sciences, Beijing 100029, China
 cmip6 | CESM1-1-CAM5-CMIP5 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
+cmip6 | CESM1-CAM5-SE-HR |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
+cmip6 | CESM1-CAM5-SE-LR |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CESM1-WACCM-SC |  | UCI, Department of Earth System Science, University of California Irvine, Irvine, CA 92697, USA
 cmip6 | CESM2 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CESM2-FV2 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA

@@ -252,8 +252,8 @@ if __name__ == "__main__":
     config.set('las_configure', LAS_CONFIGURE)
     config.set('extract_global_attrs', build_line(tuple(EXTRACT_GLOBAL_NC), sep=', '))
     config.set('thredds_exclude_variables', build_line(tuple(THREDDS_EXCLUDE_VARIABLES), sep=', '))
-    LOCATE_VARS_EXT = [y for x in [[x, x+"_"] for x in LOCATE_VARS] for y in x] 
-    config.set('variable_locate', build_line(LOCATE_VARS_EXT, sep=', '))
+    LOCATE_VARS_EXT = [', '.join([x, x+"_"]) for x in LOCATE_VARS ] 
+    config.set('variable_locate', build_line(LOCATE_VARS_EXT, sep=' | '))
     config.set('variable_per_file', 'true')
     config.set('version_by_date', 'true')
 
