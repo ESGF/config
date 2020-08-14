@@ -365,6 +365,7 @@ cmip6 | RTE-RRTMGP-181204 |  | RTE-RRTMGP-Consortium, AER (Atmospheric and Envir
 cmip6 | SAM0-UNICON |  | SNU, Seoul National University, Seoul 08826, Republic of Korea
 cmip6 | SAM0-UNICON |  | SNU, Seoul National University, Seoul 08826, Republic of Korea
 cmip6 | TaiESM1 |  | AS-RCEC, Research Center for Environmental Changes, Academia Sinica, Nankang, Taipei 11529, Taiwan
+cmip6 | TaiESM1-TIMCOM |  | NTU, National Taiwan University, Taipei 10650, Taiwan
 cmip6 | UKESM1-0-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-0-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-0-MMh |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
