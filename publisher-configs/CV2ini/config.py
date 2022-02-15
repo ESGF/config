@@ -31,7 +31,7 @@ THREDDS_EXCLUDE_VARIABLES = ['a', 'a_bnds', 'alev1', 'alevel', 'alevhalf', 'alt4
                              'latitude_bnds', 'layer', 'lev', 'lev_bnds', 'location', 'lon', 'lon_bnds', 'longitude',
                              'longitude_bnds', 'olayer100m', 'olevel', 'oline', 'p0', 'p220', 'p500', 'p560', 'p700',
                              'p840', 'plev', 'plev3', 'plev7', 'plev8', 'plev_bnds', 'plevs', 'pressure1', 'region',
-                             'rho', 'scatratio', 'sdepth', 'sdepth1', 'sza5', 'tau', 'tau_bnds', 'time', 'time1',
+                             'rho', 'scatratio', 'sdepth', 'sdepth1', 'sza5', 'time', 'time1',
                              'time2', 'time_bnds', 'vegtype', 'i', 'j', 'rlat', 'rlat_bnds', 'sector', 'type',
                              'vertices_latitude', 'vertices_longitude']
 
