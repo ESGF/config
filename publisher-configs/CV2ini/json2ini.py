@@ -213,7 +213,11 @@ if __name__ == "__main__":
                         header = 'map(source_id : model_cohort)'
                         model_cohort = []
                         for model in content.keys():
-                            model_cohort.append((model, content[model]['cohort'][0]))
+                            if len(content[model]['cohort']) > 1:
+                                value = content[model]['cohort']
+                            else:
+                                value = content[model]['cohort'][0]
+                            model_cohort.append((model,value))
                         model_cohort = tuple(
                             [build_line(m, length=lengths(model_cohort), indent=True) for m in sorted(model_cohort)])
                         config.set('model_cohort_map', build_line((header,) + model_cohort, sep='\n'))
