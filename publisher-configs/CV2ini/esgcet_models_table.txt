@@ -195,7 +195,6 @@ cmip6 | BCC-ESM1 |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BESM-2-9 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
-cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | CAM-MPAS-HR |  | PNNL-WACCEM, PNNL (Pacific Northwest National Laboratory), Richland, WA 99352, USA
 cmip6 | CAM-MPAS-LR |  | PNNL-WACCEM, PNNL (Pacific Northwest National Laboratory), Richland, WA 99352, USA
 cmip6 | CAMS-CSM1-0 |  | CAMS, Chinese Academy of Meteorological Sciences, Beijing 100081, China
@@ -207,7 +206,6 @@ cmip6 | CESM1-CAM5-SE-LR |  | NCAR, National Center for Atmospheric Research, Cl
 cmip6 | CESM1-WACCM-SC |  | UCI, Department of Earth System Science, University of California Irvine, Irvine, CA 92697, USA
 cmip6 | CESM2 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CESM2-FV2 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
-cmip6 | CESM2-SE |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CESM2-WACCM |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CESM2-WACCM-FV2 |  | NCAR, National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA
 cmip6 | CIESM |  | THU, Department of Earth System Science, Tsinghua University, Beijing 100084, China
