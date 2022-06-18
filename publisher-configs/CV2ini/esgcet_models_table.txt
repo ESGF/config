@@ -227,7 +227,6 @@ cmip6 | CNRM-CM6-1-HR |  | CNRM-CERFACS, CNRM (Centre National de Recherches Met
 cmip6 | CNRM-ESM2-1 |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
 cmip6 | CNRM-ESM2-1 |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
 cmip6 | CNRM-ESM2-1-HR |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
-cmip6 | CNRM-ESM2-1-HR |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
 cmip6 | CSIRO-Mk3L-1-3 |  | UTAS, Institute for Marine and Antarctic Studies, University of Tasmania, Hobart, Tasmania 7001, Australia
 cmip6 | CanESM5 |  | CCCma, Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, BC V8P 5C2, Canada
 cmip6 | CanESM5 |  | CCCma, Canadian Centre for Climate Modelling and Analysis, Victoria, BC V8P 5C2, Canada
