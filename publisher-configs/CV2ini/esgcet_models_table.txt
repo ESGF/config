@@ -193,7 +193,6 @@ cmip6 | BCC-CSM2-HR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-CSM2-MR |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BCC-ESM1 |  | BCC, Beijing Climate Center, Beijing 100081, China
 cmip6 | BESM-2-7 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
-cmip6 | BESM-2-9 |  | INPE, National Institute for Space Research, Cachoeira Paulista, SP 12630-000, Brazil
 cmip6 | BNU-ESM-1-1 |  | BNU, Beijing Normal University, Beijing 100875, China
 cmip6 | CAM-MPAS-HR |  | PNNL-WACCEM, PNNL (Pacific Northwest National Laboratory), Richland, WA 99352, USA
 cmip6 | CAM-MPAS-LR |  | PNNL-WACCEM, PNNL (Pacific Northwest National Laboratory), Richland, WA 99352, USA
@@ -227,7 +226,6 @@ cmip6 | CNRM-CM6-1-HR |  | CNRM-CERFACS, CNRM (Centre National de Recherches Met
 cmip6 | CNRM-ESM2-1 |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
 cmip6 | CNRM-ESM2-1 |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
 cmip6 | CNRM-ESM2-1-HR |  | CNRM-CERFACS, CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)
-cmip6 | CSIRO-Mk3L-1-3 |  | UTAS, Institute for Marine and Antarctic Studies, University of Tasmania, Hobart, Tasmania 7001, Australia
 cmip6 | CanESM5 |  | CCCma, Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, BC V8P 5C2, Canada
 cmip6 | CanESM5 |  | CCCma, Canadian Centre for Climate Modelling and Analysis, Victoria, BC V8P 5C2, Canada
 cmip6 | CanESM5-CanOE |  | CCCma, Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, BC V8P 5C2, Canada
@@ -372,7 +370,6 @@ cmip6 | UKESM1-0-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, D
 cmip6 | UKESM1-0-MMh |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-1-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
 cmip6 | UKESM1-ice-LL |  | MOHC, Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK
-cmip6 | UofT-CCSM4 |  | UofT, Department of Physics, University of Toronto, 60 St George Street, Toronto, ON M5S1A7, Canada
 cmip6 | VRESM-1-0 |  | CSIR-CSIRO, CSIR (Council for Scientific and Industrial Research - Natural Resources and the Environment, Pretoria, 0001, South Africa), CSIRO (Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia)
 cordex | IPSL-INERIS-WRF331F |  | Institut Pierre-Simon Laplace
 cordex | WRF331F |  | Institut Pierre-Simon Laplace
