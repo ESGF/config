@@ -269,7 +269,6 @@ cmip6 | GFDL-CM4C192 |  | NOAA-GFDL, National Oceanic and Atmospheric Administra
 cmip6 | GFDL-ESM2M |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-ESM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-ESM4 |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
-cmip6 | GFDL-GLOBAL-LBL |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-GRTCODE |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-OM4p5B |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
 cmip6 | GFDL-RFM-DISORT |  | NOAA-GFDL, National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA
