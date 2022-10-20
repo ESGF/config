@@ -25,9 +25,6 @@ custom configuration of replica nodes.
     <value>esgf-data.dkrz.de/solr</value>
     <value>esgf-node.ipsl.upmc.fr/solr</value>
     <value>esg-dn1.nsc.liu.se/solr</value>
-    <value>esgf-index1.ceda.ac.uk/solr</value>
-    <value>esgf-index3.ceda.ac.uk/solr</value> <!-- for Tier 2 nodes that publish to CEDA -->
-    <value>esgf-index4.ceda.ac.uk/solr</value> <!-- for CMIP6 -->
-    <value>esg.pik-potsdam.de/solr</value>
-     
+    <value>esgf-solr.ceda.ac.uk/solr</value>
+    
 </shards>
