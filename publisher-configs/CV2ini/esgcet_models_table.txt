@@ -314,7 +314,6 @@ cmip6 | IPSL-CM6A-ATM-LR-REPROBUS |  | IPSL, Institut Pierre Simon Laplace, Pari
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-LR |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-LR-INCA |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
-cmip6 | IPSL-CM6A-MR025 |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | IPSL-CM6A-MR1 |  | IPSL, Institut Pierre Simon Laplace, Paris 75252, France
 cmip6 | KACE-1-0-G |  | NIMS-KMA, National Institute of Meteorological Sciences/Korea Meteorological Administration, Climate Research Division, Seoho-bukro 33, Seogwipo-si, Jejudo 63568, Republic of Korea
 cmip6 | KIOST-ESM |  | KIOST, Korea Institute of Ocean Science and Technology, Busan 49111, Republic of Korea
