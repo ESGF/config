@@ -38,7 +38,7 @@ filename_format = %(variable_id)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%
 
 directory_format = %(root)s/%(mip_era)s/%(activity_id)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/%(member_id)s/%(table_id)s/%(variable_id)s/%(grid_label)s/%(version)s
 
-dataset_id = %(mip_era)s.%(activity_drs)s.%(institution_id)s.%(source_id)s.%(experiment_id)s.%(member_id)s.%(table_id)s.%(variable_id)s.%(grid_label)s
+dataset_id = %(mip_era)s.%(activity_id)s.%(institution_id)s.%(source_id)s.%(experiment_id)s.%(member_id)s.%(table_id)s.%(variable_id)s.%(grid_label)s
 
 {opts_line("mip_era")}
 
