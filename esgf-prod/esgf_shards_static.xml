@@ -13,8 +13,6 @@ custom configuration of replica nodes.
     <!-- Africa -->
 
     <!-- America -->
-    <value>esgf-node.llnl.gov/solr</value>
-    <value>esgdata.gfdl.noaa.gov/solr</value>
 
     <!-- Asia -->
 
